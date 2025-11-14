@@ -1,0 +1,3002 @@
+[
+  {
+    "question": "In what country is Normandy located?",
+    "ground_truth": "France",
+    "prediction": "The Duchy of Normandy, which began in 911 as a fie",
+    "f1": 0.0
+  },
+  {
+    "question": "When were the Normans in Normandy?",
+    "ground_truth": "10th and 11th centuries",
+    "prediction": "The Normans were in contact with England from an early date.",
+    "f1": 0.0
+  },
+  {
+    "question": "From which countries did the Norse originate?",
+    "ground_truth": "Denmark, Iceland and Norway",
+    "prediction": "s, Orkney Vikings, possibly Swedes, and Anglo-Danes from the English Danelaw under Norse control.",
+    "f1": 0.11111111111111112
+  },
+  {
+    "question": "Who was the Norse leader?",
+    "ground_truth": "Rollo",
+    "prediction": "Norse (\"Norman\" comes from \"Norseman\") raiders and pirates from Denmark, Iceland and Norway who, under their leader Rollo, agree",
+    "f1": 0.0
+  },
+  {
+    "question": "What century did the Normans first gain their separate identity?",
+    "ground_truth": "10th century",
+    "prediction": "istinct cultural and ethnic identity of the Normans emerged initially in the first half of the 10th century, and it continued to",
+    "f1": 0.08333333333333334
+  },
+  {
+    "question": "Who was the duke in the battle of Hastings?",
+    "ground_truth": "William the Conqueror",
+    "prediction": "ing Harold II at the Battle of Hastings.",
+    "f1": 0.18181818181818182
+  },
+  {
+    "question": "Who ruled the duchy of Normandy",
+    "ground_truth": "Richard I",
+    "prediction": "The Duchy of Normandy, which began in 911 as a fie",
+    "f1": 0.0
+  },
+  {
+    "question": "What religion were the Normans",
+    "ground_truth": "Catholic",
+    "prediction": "The Normans we",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the original meaning of the word Norman?",
+    "ground_truth": "Viking",
+    "prediction": "merge with the Carolingian-based cultures of West Francia.",
+    "f1": 0.0
+  },
+  {
+    "question": "When was the Latin version of the word Norman first recorded?",
+    "ground_truth": "9th century",
+    "prediction": "The Anglo-Norman language became distinct from the Latin language,",
+    "f1": 0.0
+  },
+  {
+    "question": "When was the Duchy of Normandy founded?",
+    "ground_truth": "911",
+    "prediction": "The Duchy of Normandy, which began in 911 as a fie",
+    "f1": 0.16666666666666669
+  },
+  {
+    "question": "Who did Rollo sign the treaty of Saint-Clair-sur-Epte with?",
+    "ground_truth": "King Charles III",
+    "prediction": "fdom, was established by the treaty of Saint-Clair-sur-Epte between King Charles III of West Francia and the famed Viking ruler",
+    "f1": 0.2608695652173913
+  },
+  {
+    "question": "What river originally bounded the Duchy",
+    "ground_truth": "Seine",
+    "prediction": "river Seine, but the Duchy would eventually extend west beyond the Seine.",
+    "f1": 0.0
+  },
+  {
+    "question": "Who upon arriving gave the original viking settlers a common identity?",
+    "ground_truth": "Rollo",
+    "prediction": "Not only were their original Viking brethren still ravaging the Eng",
+    "f1": 0.0
+  },
+  {
+    "question": "What was the Norman religion?",
+    "ground_truth": "Catholicism",
+    "prediction": "The legendary religious zeal of the Normans was exercised in religious wars long before the First Crusade carved out a Norman pr",
+    "f1": 0.0
+  },
+  {
+    "question": "What part of France were the Normans located?",
+    "ground_truth": "north",
+    "prediction": "Initially the Normans maintained a distinct culture and ethnicity.",
+    "f1": 0.0
+  },
+  {
+    "question": "What was one of the Norman's major exports?",
+    "ground_truth": "fighting horsemen",
+    "prediction": "The Norman dynasty had a major political, cultural and military impact on medieval Europe and even the Near East.",
+    "f1": 0.0
+  },
+  {
+    "question": "Who was the Normans' main enemy in Italy, the Byzantine Empire and Armenia?",
+    "ground_truth": "Seljuk Turks",
+    "prediction": "Soon after the Normans began to enter Italy, they entered the Byzantine Empire and then Armenia, fighting against the Pechenegs,",
+    "f1": 0.0
+  },
+  {
+    "question": "When did Herve serve as a Byzantine general?",
+    "ground_truth": "1050s",
+    "prediction": "One of the first Norman mercenaries to serve as a Byzantine general was Herv\u00e9 in the 1050s.",
+    "f1": 0.0
+  },
+  {
+    "question": "When did Robert Crispin go up against the Turks?",
+    "ground_truth": "1060s",
+    "prediction": "In the 1060s, Robert Crispin led the Normans of Edessa against the Turks.",
+    "f1": 0.0
+  },
+  {
+    "question": "Who ruined Roussel de Bailleul's plans for an independent state?",
+    "ground_truth": "Alexius Komnenos",
+    "prediction": "Roussel de Bailleul even tried to carve out an independent state in Asia Minor with suppo",
+    "f1": 0.0
+  },
+  {
+    "question": "What was the name of the Norman castle?",
+    "ground_truth": "Afranji",
+    "prediction": "first Norman settlements were established.",
+    "f1": 0.0
+  },
+  {
+    "question": "Who was the leader when the Franks entered the Euphrates valley?",
+    "ground_truth": "Oursel",
+    "prediction": "Oursel led a force of \"Franks\" into the upper Euphrates valley in northern Syria.",
+    "f1": 0.13333333333333333
+  },
+  {
+    "question": "Who did the Normans team up with in Anatolia?",
+    "ground_truth": "Turkish forces",
+    "prediction": "with the Byzantines against the Normans.",
+    "f1": 0.0
+  },
+  {
+    "question": "What were the origins of the Raouliii family?",
+    "ground_truth": "Norman mercenary",
+    "prediction": "They were based at Malatya and Edessa, under the Byzantine duke of Antioch, Isaac Komnenos.",
+    "f1": 0.0
+  },
+  {
+    "question": "What was the name of the count of Apulia ",
+    "ground_truth": "Robert Guiscard",
+    "prediction": "Robert Guiscard, an other Norman adventurer previously elevated to the dignity of count of Apulia as the result of his military",
+    "f1": 0.08695652173913042
+  },
+  {
+    "question": "When did Dyrrachium  fall to the Normans?",
+    "ground_truth": "1082",
+    "prediction": "The Normans were now free to penetrate into",
+    "f1": 0.0
+  },
+  {
+    "question": "How many men were in Robert's army?",
+    "ground_truth": "30,000",
+    "prediction": "t in 1085, after the death of Robert.",
+    "f1": 0.0
+  },
+  {
+    "question": "Where did the Normans and Byzantines sign the peace treaty?",
+    "ground_truth": "Deabolis",
+    "prediction": "from his campaign and sign a peace treaty with the Byzantines in the city of Deabolis.",
+    "f1": 0.0
+  },
+  {
+    "question": "Who was Robert's son?",
+    "ground_truth": "Bohemond",
+    "prediction": "t in 1085, after the death of Robert.",
+    "f1": 0.0
+  },
+  {
+    "question": "What river was Petrela located by?",
+    "ground_truth": "Deabolis",
+    "prediction": "Meanwhile, they occupied Petrela,",
+    "f1": 0.0
+  },
+  {
+    "question": "When did the Normans attack Dyrrachium?",
+    "ground_truth": "1185",
+    "prediction": "The invading Normans an",
+    "f1": 0.0
+  },
+  {
+    "question": "What was the naval base called?",
+    "ground_truth": "Dyrrachium",
+    "prediction": "After some searching, it was discovered that the boat carrying h",
+    "f1": 0.0
+  },
+  {
+    "question": "Where was Dyrrachium located?",
+    "ground_truth": "the Adriatic",
+    "prediction": "Some time later, Dyrrachium\u2014one of the most important naval bases of",
+    "f1": 0.15384615384615385
+  },
+  {
+    "question": "Who did Emma Marry?",
+    "ground_truth": "King Ethelred II",
+    "prediction": "This relationship eventually produced closer ties of blood through the marriage of Emma, sis",
+    "f1": 0.0
+  },
+  {
+    "question": "Who was Emma's brother?",
+    "ground_truth": "Duke Richard II",
+    "prediction": "This relationship eventually produced closer ties of blood through the marriage of Emma, sis",
+    "f1": 0.0
+  },
+  {
+    "question": "To where did Ethelred flee?",
+    "ground_truth": "Normandy",
+    "prediction": "Because of this, Ethelred fled to Normandy in 1013, when he",
+    "f1": 0.16666666666666669
+  },
+  {
+    "question": "Who kicked Ethelred out?",
+    "ground_truth": "Sweyn Forkbeard",
+    "prediction": "Because of this, Ethelred fled to Normandy in 1013, when he",
+    "f1": 0.0
+  },
+  {
+    "question": "Who was Edward the Confessor's half-brother?",
+    "ground_truth": "Harthacnut",
+    "prediction": "When finally Edward the Confessor returned from his father's refuge in 1041, at the invitation of his half-brother Harthacnut, h",
+    "f1": 0.0
+  },
+  {
+    "question": "When did Edward return?",
+    "ground_truth": "1041",
+    "prediction": "is a typical example of the attitudes of Edward.",
+    "f1": 0.0
+  },
+  {
+    "question": "Who did Edward make archbishop of Canterbury?",
+    "ground_truth": "Robert of Jumi\u00e8ges",
+    "prediction": "He appointed Robert of Jumi\u00e8ges archbishop of Canterbury and made Ralph the Tim",
+    "f1": 0.375
+  },
+  {
+    "question": "Where did Harold II die?",
+    "ground_truth": "Battle of Hastings",
+    "prediction": "ing Harold II at the Battle of Hastings.",
+    "f1": 0.36363636363636365
+  },
+  {
+    "question": "Who killed Harold II? ",
+    "ground_truth": "William II",
+    "prediction": "ing Harold II at the Battle of Hastings.",
+    "f1": 0.2
+  },
+  {
+    "question": "When was the Battle of Hastings?",
+    "ground_truth": "1066",
+    "prediction": "ing Harold II at the Battle of Hastings.",
+    "f1": 0.0
+  },
+  {
+    "question": "Who was the ruling class ahead of the Normans?",
+    "ground_truth": "Anglo-Saxons",
+    "prediction": "d their descendants replaced the Anglo-Saxons as the ruling class of England.",
+    "f1": 0.15384615384615385
+  },
+  {
+    "question": "What was the Anglo-Norman language's final form?",
+    "ground_truth": "Modern English",
+    "prediction": "The Norman language was forged by the ad",
+    "f1": 0.0
+  },
+  {
+    "question": "In what year did the Norman's invade at Bannow Bay?",
+    "ground_truth": "1169",
+    "prediction": "fter their invasion at Bannow Bay in 1169.",
+    "f1": 0.0
+  },
+  {
+    "question": "What country did the Normans invade in 1169?",
+    "ground_truth": "Ireland",
+    "prediction": "Initially the Normans",
+    "f1": 0.0
+  },
+  {
+    "question": "What culture did the Normans combine with in Ireland?",
+    "ground_truth": "Irish",
+    "prediction": "Initially the Normans",
+    "f1": 0.0
+  },
+  {
+    "question": "Who was Margaret's brother?",
+    "ground_truth": "Edgar",
+    "prediction": "King David I of Scotland, whose elder brother Alexander",
+    "f1": 0.0
+  },
+  {
+    "question": "Who was Margaret's husband?",
+    "ground_truth": "King Malcolm III of Scotland",
+    "prediction": "I had married Sybilla of Normandy, was instrumental in introducing Normans and Norman culture to Scotland, part of the process",
+    "f1": 0.08000000000000002
+  },
+  {
+    "question": "When was Scotland invaded by William?",
+    "ground_truth": "1072",
+    "prediction": "William invaded Scotland in 1072, riding as far",
+    "f1": 0.0
+  },
+  {
+    "question": "Who was the hostage?",
+    "ground_truth": "Duncan",
+    "prediction": "including the treasure ship.",
+    "f1": 0.0
+  },
+  {
+    "question": "Who did Alexander I marry?",
+    "ground_truth": "Sybilla of Normandy",
+    "prediction": "King David I of Scotland, whose elder brother Alexander",
+    "f1": 0.16666666666666666
+  },
+  {
+    "question": "What culture's arrival in Scotland is know as the \"Davidian Revolution\"?",
+    "ground_truth": "Norman",
+    "prediction": "ing Normans and Norman culture to Scotland, part of the process some scholars call the \"Davidian Revolution\".",
+    "f1": 0.1111111111111111
+  },
+  {
+    "question": "Where was Ralph earl of?",
+    "ground_truth": "Hereford",
+    "prediction": "bert of Jumi\u00e8ges archbishop of Canterbury and made Ralph the Timid earl of Hereford.",
+    "f1": 0.0
+  },
+  {
+    "question": "Who was Ralph in charge of being at war with?",
+    "ground_truth": "the Welsh",
+    "prediction": "orementioned Ralph as earl of Hereford and charged him with defending the Marches and warring with the Welsh.",
+    "f1": 0.09999999999999999
+  },
+  {
+    "question": "Who made Ralph earl?",
+    "ground_truth": "Edward the Confessor",
+    "prediction": "bert of Jumi\u00e8ges archbishop of Canterbury and made Ralph the Timid earl of Hereford.",
+    "f1": 0.11764705882352941
+  },
+  {
+    "question": "What country was under the control of Norman barons?",
+    "ground_truth": "Wales",
+    "prediction": "Subsequent to the Conquest, however, the Marches came completely under the dominance of William's most trusted Norman barons, in",
+    "f1": 0.0
+  },
+  {
+    "question": "What year did Roger de Tosny fail to accomplish what he set out to do?",
+    "ground_truth": "1018",
+    "prediction": "In 1018, Roger de Tosny travelled to t",
+    "f1": 0.0
+  },
+  {
+    "question": "Who was in charge of the papal army in the War of Barbastro?",
+    "ground_truth": "William of Montreuil",
+    "prediction": "In 1064, during the War of Barbastro, William of Montreuil led the papal army and took a huge booty.",
+    "f1": 0.2727272727272727
+  },
+  {
+    "question": "When did the Siege of Antioch take place?",
+    "ground_truth": "1097",
+    "prediction": "After the successful Siege of Antioch in 1097, Bohemond began carving out an independent princ",
+    "f1": 0.0
+  },
+  {
+    "question": "What was the name of Bohemond's nephew?",
+    "ground_truth": "Tancred",
+    "prediction": "Bohemond was the de facto leader of the Crusade durin",
+    "f1": 0.0
+  },
+  {
+    "question": "What major conquest did Tancred play a roll in?",
+    "ground_truth": "Jerusalem",
+    "prediction": "Tancred was instrumental in the conquest of Jerusalem and he worked for the expansion of the Crusader",
+    "f1": 0.1111111111111111
+  },
+  {
+    "question": "How long did Western Europe control Cyprus?",
+    "ground_truth": "380 years",
+    "prediction": "e Camville and Robert de Thornham, as governors of Cyprus.",
+    "f1": 0.0
+  },
+  {
+    "question": "What ruined Richard's plans to reach Acre?",
+    "ground_truth": "a storm",
+    "prediction": "In April 1191 Richard the Lion-hearted left Messina with a large fleet in order to reach Acre.",
+    "f1": 0.10526315789473684
+  },
+  {
+    "question": "Who was Richard's fiancee?",
+    "ground_truth": "Berengaria",
+    "prediction": "Richard then pro",
+    "f1": 0.0
+  },
+  {
+    "question": "What year did the storm hit Richard's fleet?",
+    "ground_truth": "1191",
+    "prediction": "But a storm dispersed the fleet.",
+    "f1": 0.0
+  },
+  {
+    "question": "Who ruled Cyprus in 1191?",
+    "ground_truth": "Isaac Komnenos",
+    "prediction": "On 1 May 1191, Richard's fleet arrived in the port of Limassol on Cyprus.",
+    "f1": 0.0
+  },
+  {
+    "question": "Who was Guy's Rival?",
+    "ground_truth": "Conrad of Montferrat",
+    "prediction": "for Richard provided that he support Guy against his rival Conrad of Montferrat.",
+    "f1": 0.25
+  },
+  {
+    "question": "What were Isaac's chains made out of?",
+    "ground_truth": "silver",
+    "prediction": "Isaac surrendered and was confined with silver chains, because Richard had promised that he would not place him in",
+    "f1": 0.1
+  },
+  {
+    "question": "Who led Richard's troops when Cyprus was conquered?",
+    "ground_truth": "Guy de Lusignan",
+    "prediction": "91, Richard's fleet arrived in the port of Limassol on Cyprus.",
+    "f1": 0.0
+  },
+  {
+    "question": "What continent are the Canarian Islands off the coast of?",
+    "ground_truth": "Africa",
+    "prediction": "d the Canarian islands of Lanzarote, Fuerteventura and El Hierro off the Atlantic coast of Africa.",
+    "f1": 0.0
+  },
+  {
+    "question": "Who became the King of the Canary Islands?",
+    "ground_truth": "Bethencourt",
+    "prediction": "the Canary Islands.",
+    "f1": 0.0
+  },
+  {
+    "question": "Who bought the rights?",
+    "ground_truth": "Enrique P\u00e9rez de Guzm\u00e1n",
+    "prediction": "thencourt sold the rights to the islands to Enrique P\u00e9rez de Guzm\u00e1n, 2nd Count de Niebla.",
+    "f1": 0.3
+  },
+  {
+    "question": "Who sold the rights?",
+    "ground_truth": "Maciot de Bethencourt",
+    "prediction": "thencourt sold the rights to the islands to Enrique P\u00e9rez de Guzm\u00e1n, 2nd Count de Niebla.",
+    "f1": 0.10526315789473684
+  },
+  {
+    "question": "Where are Jersey and Guernsey",
+    "ground_truth": "Channel Islands",
+    "prediction": "Jersey and Guernsey in the Channel Islands.",
+    "f1": 0.22222222222222224
+  },
+  {
+    "question": "How many customaries does Norman customary law have?",
+    "ground_truth": "two",
+    "prediction": "Norman customary law",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the Norman architecture idiom?",
+    "ground_truth": "Romanesque",
+    "prediction": "a unique style known as Norman-Arab architecture within the Kingdom of Sicily.",
+    "f1": 0.0
+  },
+  {
+    "question": "What kind of arches does Norman architecture have?",
+    "ground_truth": "rounded",
+    "prediction": "a unique style known as Norman-Arab architecture within the Kingdom of Sicily.",
+    "f1": 0.0
+  },
+  {
+    "question": "What architecture type came after Norman in England?",
+    "ground_truth": "Early Gothic",
+    "prediction": "In England, the period of Norman architecture immediately succeeds that of the Anglo-Saxon and precedes the Early Gothic.",
+    "f1": 0.09999999999999999
+  },
+  {
+    "question": "What architecture type came before Norman in England?",
+    "ground_truth": "Anglo-Saxon",
+    "prediction": "In England, the period of Norman architecture immediately succeeds that of the Anglo-Saxon and precedes the Early Gothic.",
+    "f1": 0.10526315789473684
+  },
+  {
+    "question": "What place had the Norman Arab architectural style?",
+    "ground_truth": "Sicily",
+    "prediction": "a unique style known as Norman-Arab architecture within the Kingdom of Sicily.",
+    "f1": 0.0
+  },
+  {
+    "question": "When did the church reform begin?",
+    "ground_truth": "early 11th century",
+    "prediction": "However, in the early 11th century the dukes began a programme of church reform",
+    "f1": 0.35294117647058826
+  },
+  {
+    "question": "Who used the church to unify themselves?",
+    "ground_truth": "dukes",
+    "prediction": "The church was utilised by the dukes as a unifying fo",
+    "f1": 0.16666666666666669
+  },
+  {
+    "question": "When were the French wars of religion?",
+    "ground_truth": "16th century",
+    "prediction": "The French Wars of Religion in the 16th century and French Revolution in the 18th successively destroyed much of what existed in",
+    "f1": 0.16666666666666669
+  },
+  {
+    "question": "What kind of needlework was used in the creation of the Bayeux Tapestry?",
+    "ground_truth": "embroidery",
+    "prediction": "It was commissioned by Odo, the Bishop of Bayeux and first Earl of Kent, emp",
+    "f1": 0.0
+  },
+  {
+    "question": "What is Norman art's most well known piece?",
+    "ground_truth": "Bayeux Tapestry",
+    "prediction": "By far the most famous work of Norman art is the Bayeux Tapestry, which is not a tapestry but a work of embroidery.",
+    "f1": 0.16
+  },
+  {
+    "question": "Who commissioned the Tapestry?",
+    "ground_truth": "Odo",
+    "prediction": "It was commissioned by Odo, the Bishop of Bayeux and first Earl of Kent, emp",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the most important type of Norman art preserved in churches?",
+    "ground_truth": "mosaics",
+    "prediction": "By far the most famous work of Norman art is the Bayeux Tapestry, which is not a tapestry but a work of embroidery.",
+    "f1": 0.0
+  },
+  {
+    "question": "In what century did important classical music developments occur in Normandy?",
+    "ground_truth": "11th",
+    "prediction": "Normandy was the site of several important developments in the history of classical music in the 11th century.",
+    "f1": 0.10526315789473684
+  },
+  {
+    "question": "Who were the two abbots at F\u00e9camp Abbey?",
+    "ground_truth": "William of Volpiano and John of Ravenna",
+    "prediction": "At F\u00e9camp, under two Italian abbots, William of Volpiano an",
+    "f1": 0.3529411764705882
+  },
+  {
+    "question": "Where did the monks flee to?",
+    "ground_truth": "southern Italy",
+    "prediction": "Grantmesnil, several monks of Saint-Evroul fled to southern Italy, where they were patronised by Robert Guiscard and established",
+    "f1": 0.09999999999999999
+  },
+  {
+    "question": "What monastery did the Saint-Evroul monks establish in Italy?",
+    "ground_truth": "Latin monastery at Sant'Eufemia.",
+    "prediction": "Under the Norman abbot Robert de Grantmesnil, several monks of Saint-Evroul fled to southern Ital",
+    "f1": 0.0
+  },
+  {
+    "question": "Who patronized the monks in Italy? ",
+    "ground_truth": "Robert Guiscard",
+    "prediction": "There they continued the tra",
+    "f1": 0.0
+  },
+  {
+    "question": "What tradition were the Saint-Evroul monks known for?",
+    "ground_truth": "singing",
+    "prediction": "At Saint Evroul, a tradition of singing had developed and the choir achieved fame in Normandy.",
+    "f1": 0.11764705882352941
+  },
+  {
+    "question": "What branch of theoretical computer science deals with broadly classifying computational problems by difficulty and class of relationship?",
+    "ground_truth": "Computational complexity theory",
+    "prediction": "putation in theoretical computer science that focuses on classifying computational problems according to their inherent difficul",
+    "f1": 0.10526315789473684
+  },
+  {
+    "question": "By what main attribute are computational problems classified utilizing computational complexity theory? ",
+    "ground_truth": "inherent difficulty",
+    "prediction": "ictions on the available resources is what distinguishes computational complexity from computability theory: the latter theory a",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the term for a task that generally lends itself to being solved by a computer?",
+    "ground_truth": "computational problems",
+    "prediction": "o being solved by a computer, which is equivalent to stating that the problem may be solved by mechanical application of mathema",
+    "f1": 0.0
+  },
+  {
+    "question": "What measure of a computational problem broadly defines the inherent difficulty of the solution?",
+    "ground_truth": "if its solution requires significant resources",
+    "prediction": "To measure the difficulty of solving a computational problem, one may wish to see how much time the best algorithm requires to s",
+    "f1": 0.06896551724137931
+  },
+  {
+    "question": "What method is used to intuitively assess or quantify the amount of resources required to solve a computational problem?",
+    "ground_truth": "mathematical models of computation",
+    "prediction": "is that the former is devoted to analyzing the amount of resources needed by a particular algorithm to solve a problem, whereas",
+    "f1": 0.07692307692307693
+  },
+  {
+    "question": "What are two basic primary resources used to guage complexity?",
+    "ground_truth": "time and storage",
+    "prediction": "Other complexity measures are also used, such as the amount o",
+    "f1": 0.0
+  },
+  {
+    "question": "What unit is measured to determine circuit complexity?",
+    "ground_truth": "number of gates in a circuit",
+    "prediction": "ory include communication complexity, circuit complexity, and decision tree complexity.",
+    "f1": 0.125
+  },
+  {
+    "question": "What practical role does defining the complexity of problems play in everyday computing?",
+    "ground_truth": "determine the practical limits on what computers can and cannot do",
+    "prediction": "of processors (used in parallel computing).",
+    "f1": 0.0
+  },
+  {
+    "question": "What two fields of theoretical computer science closely mirror computational complexity theory?",
+    "ground_truth": "analysis of algorithms and computability theory",
+    "prediction": "Closely related fields in theoretical computer science are analysis of algorithms and computability theory.",
+    "f1": 0.5
+  },
+  {
+    "question": "What field of computer science analyzes the resource requirements of a specific algorithm isolated unto itself within a given problem?",
+    "ground_truth": "analysis of algorithms",
+    "prediction": "is that the former is devoted to analyzing the amount of resources needed by a particular algorithm to solve a problem, whereas",
+    "f1": 0.08
+  },
+  {
+    "question": "What field of computer science analyzes all possible algorithms in aggregate to determine the resource requirements needed to solve to a given problem?  ",
+    "ground_truth": "computational complexity theory",
+    "prediction": "is that the former is devoted to analyzing the amount of resources needed by a particular algorithm to solve a problem, whereas",
+    "f1": 0.0
+  },
+  {
+    "question": "What field of computer science is primarily concerned with determining the likelihood of whether or not a problem can ultimately be solved using algorithms?",
+    "ground_truth": "computability theory",
+    "prediction": "o being solved by a computer, which is equivalent to stating that the problem may be solved by mechanical application of mathema",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the name given to the input string of a computational problem?",
+    "ground_truth": "problem instance",
+    "prediction": "The input string for a computational problem is referred to as a probl",
+    "f1": 0.13333333333333336
+  },
+  {
+    "question": "In computational complexity theory, what is the term given to describe the baseline abstract question needing to be solved? ",
+    "ground_truth": "the problem",
+    "prediction": "In computational complexity theory, a problem refers to the abstract question to be solved.",
+    "f1": 0.25
+  },
+  {
+    "question": "Is a problem instance typically characterized as abstract or concrete?",
+    "ground_truth": "concrete",
+    "prediction": "In contrast, an instance of this problem is a rather concrete utterance, which can serve as the inp",
+    "f1": 0.10526315789473684
+  },
+  {
+    "question": "What is another name for any given measure of input associated with a problem?",
+    "ground_truth": "instances",
+    "prediction": "input to the problem, and the solution is the output corresponding to the given input.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the general term used to describe the output to any given input in a problem instance?",
+    "ground_truth": "solution",
+    "prediction": "Stated another way, the instance is a particular input to the problem, and the solution is the output correspondi",
+    "f1": 0.1
+  },
+  {
+    "question": "By how many kilometers does the traveling salesman problem seek to classify a route between the 15 largest cities in Germany?",
+    "ground_truth": "2000",
+    "prediction": "f the traveling salesman problem: Is there a route of at most 2000 kilometres passing through all of Germany's 15 largest cities",
+    "f1": 0.08695652173913045
+  },
+  {
+    "question": "What is one example of an instance that the quantitative answer to the traveling salesman problem fails to answer?",
+    "ground_truth": "round trip through all sites in Milan",
+    "prediction": "The quantitative answer to this particular problem instance is of little use for solving other instances of the problem, such",
+    "f1": 0.0
+  },
+  {
+    "question": "What does computational complexity theory most specifically seek to answer? ",
+    "ground_truth": "computational problems",
+    "prediction": "computational complexity theory is to determine the practical limits on what computers can and cannot do.",
+    "f1": 0.1111111111111111
+  },
+  {
+    "question": "In a computational problem, what can be described as a string over an alphabet?",
+    "ground_truth": "problem instance",
+    "prediction": "When considering computational problems, a problem instance is a string over an alphabet.",
+    "f1": 0.2666666666666667
+  },
+  {
+    "question": "What is the name of the alphabet is most commonly used in a problem instance?",
+    "ground_truth": "binary alphabet",
+    "prediction": "When considering computational problems, a problem instance is a string over an alphabet.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is another term for the string of a problem instance?",
+    "ground_truth": "bitstrings",
+    "prediction": "The input string for a computational problem is referred to as a probl",
+    "f1": 0.0
+  },
+  {
+    "question": "In the encoding of mathematical objects, what is the way in which integers are commonly expressed?",
+    "ground_truth": "binary notation",
+    "prediction": "As in a real-world computer, mathematical objects",
+    "f1": 0.0
+  },
+  {
+    "question": "What is one way in which graphs can be encoded? ",
+    "ground_truth": "adjacency matrices",
+    "prediction": "For example, integers can be represented in binary notation, and graphs can be",
+    "f1": 0.0
+  },
+  {
+    "question": "What kind of problems are one of the main topics studied in computational complexity theory?",
+    "ground_truth": "Decision problems",
+    "prediction": "Decision problems are one of the central objects of study in computational complexity theory.",
+    "f1": 0.25
+  },
+  {
+    "question": "What are the two simple word responses to a decision problem?",
+    "ground_truth": "yes or no",
+    "prediction": "A decision problem can be viewed as a formal language, where the members of the language are instanc",
+    "f1": 0.0
+  },
+  {
+    "question": "What are the two integer responses to a decision problem?",
+    "ground_truth": "1 or 0",
+    "prediction": "A decision problem can be viewed as a formal language, where the members of the language are instanc",
+    "f1": 0.0
+  },
+  {
+    "question": "What will the output be for a member of the language of a decision problem?",
+    "ground_truth": "yes",
+    "prediction": "A decision problem can be viewed as a formal language, where the members of the language are instanc",
+    "f1": 0.0
+  },
+  {
+    "question": "What answer denotes that an algorithm has accepted an input string?",
+    "ground_truth": "yes",
+    "prediction": "an algorithm, whether a given input string is a member of the formal language under consideration.",
+    "f1": 0.0
+  },
+  {
+    "question": "What kind of graph is an example of an input used in a decision problem?",
+    "ground_truth": "arbitrary graph",
+    "prediction": "An example of a decision problem is the following.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the term for the set of all connected graphs related to this decision problem?",
+    "ground_truth": "formal language",
+    "prediction": "The formal language associated with this decision problem is then the set of all connected gr",
+    "f1": 0.2222222222222222
+  },
+  {
+    "question": "What encoding decision needs to be made in order to determine an exact definition of the formal language?",
+    "ground_truth": "how graphs are encoded as binary strings",
+    "prediction": "A decision problem can be viewed as a formal language, where the members of the language are instanc",
+    "f1": 0.16
+  },
+  {
+    "question": "A function problem is an example of what?",
+    "ground_truth": "a computational problem",
+    "prediction": "The corresponding set of function problems is FP.",
+    "f1": 0.0
+  },
+  {
+    "question": "How many outputs are expected for each input in a function problem?",
+    "ground_truth": "a single output",
+    "prediction": "A function problem is a computational problem where a single output (of a total function) is expected for every input, but the o",
+    "f1": 0.23076923076923078
+  },
+  {
+    "question": "The traveling salesman problem is an example of what type of problem?",
+    "ground_truth": "A function problem",
+    "prediction": "tance, consider the following instance of the decision version of the traveling salesman problem: Is there a route of at most 20",
+    "f1": 0.08
+  },
+  {
+    "question": "In addition to the traveling salesman problem, what is another example of a function problem?",
+    "ground_truth": "the integer factorization problem",
+    "prediction": "The corresponding set of function problems is FP.",
+    "f1": 0.16666666666666666
+  },
+  {
+    "question": "Is the output of a functional problem typically characterized by a simple or complex answer?",
+    "ground_truth": "complex",
+    "prediction": "put (of a total function) is expected for every input, but the output is more complex than that of a decision problem, that is,",
+    "f1": 0.07999999999999999
+  },
+  {
+    "question": "How can function problems typically be restated?",
+    "ground_truth": "decision problems",
+    "prediction": "is not really the case, since function problems can be recast as decision problems.",
+    "f1": 0.25
+  },
+  {
+    "question": "If two integers are multiplied and output a value, what is this expression set called?",
+    "ground_truth": "set of triples",
+    "prediction": "a member of this set corresponds to solving the problem of multiplying two numbers.",
+    "f1": 0.23529411764705882
+  },
+  {
+    "question": "What is a commonly used measurement used to determine the complexity of a computational problem?",
+    "ground_truth": "how much time the best algorithm requires to solve the problem",
+    "prediction": "tween analysis of algorithms and computational complexity theory is that the former is devoted to analyzing the amount of resour",
+    "f1": 0.12903225806451613
+  },
+  {
+    "question": "What is one variable on which the running time may be contingent?",
+    "ground_truth": "the instance",
+    "prediction": "end on the instance.",
+    "f1": 0.3333333333333333
+  },
+  {
+    "question": "How is the time needed to obtain the solution to a problem calculated?",
+    "ground_truth": "as a function of the size of the instance",
+    "prediction": "For instance, in the problem of finding whether a graph is connected, how much more time does it take to solve a problem f",
+    "f1": 0.18181818181818182
+  },
+  {
+    "question": "In what unit is the size of the input measured?",
+    "ground_truth": "bits",
+    "prediction": "aken to be the size of the input in bits.",
+    "f1": 0.0
+  },
+  {
+    "question": "Complexity theory seeks to define the relationship between the scale of algorithms with respect to what other variable?",
+    "ground_truth": "an increase in the input size",
+    "prediction": "tween analysis of algorithms and computational complexity theory is that the former is devoted to analyzing the amount of resour",
+    "f1": 0.07692307692307691
+  },
+  {
+    "question": "Whose thesis states that the solution to a problem is solvable with reasonable resources assuming it allows for a polynomial time algorithm?",
+    "ground_truth": "Cobham's thesis",
+    "prediction": "an be solved with a feasible amount of resources if it admits a polynomial time algorithm.",
+    "f1": 0.0
+  },
+  {
+    "question": "If input size is is equal to n, what can respectively be assumed is the function of n?",
+    "ground_truth": "the time taken",
+    "prediction": "If the input size is n, the time taken can be expressed as a function of n.",
+    "f1": 0.3
+  },
+  {
+    "question": "What term corresponds to the maximum measurement of time across all functions of n? ",
+    "ground_truth": "worst-case time complexity",
+    "prediction": "efined to be the maximum time taken over all inputs of size n.",
+    "f1": 0.125
+  },
+  {
+    "question": "How is worst-case time complexity written as an expression?",
+    "ground_truth": "T(n)",
+    "prediction": "The complexity of an algorithm is usually taken to be its worst-case complexity, unless",
+    "f1": 0.0
+  },
+  {
+    "question": "Assuming that T represents a polynomial in T(n), what is the term given to the corresponding algorithm?",
+    "ground_truth": "polynomial time algorithm",
+    "prediction": "If T(n) is a polynomial in n, then the algorithm is said to be a",
+    "f1": 0.2222222222222222
+  },
+  {
+    "question": "What is the term for a mathematical model that theoretically represents a general computing machine?",
+    "ground_truth": "A Turing machine",
+    "prediction": "A Turing machine is a mathematical model of a general computing machine.",
+    "f1": 0.4
+  },
+  {
+    "question": "It is generally assumed that a Turing machine can solve anything capable of also being solved using what?",
+    "ground_truth": "an algorithm",
+    "prediction": "elieved that if a problem can be solved by an algorithm, there exists a Turing machine that solves the problem.",
+    "f1": 0.09090909090909091
+  },
+  {
+    "question": "What is the most commonplace model utilized in complexity theory?",
+    "ground_truth": "the Turing machine",
+    "prediction": "other model of computation, the Turing machine is the most commonly used model in complexity theory.",
+    "f1": 0.3157894736842105
+  },
+  {
+    "question": "What does a Turing machine handle on a strip of tape?",
+    "ground_truth": "symbols",
+    "prediction": "tained on a strip of tape.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is generally considered to be the most basic iteration of a Turing machine?",
+    "ground_truth": "A deterministic Turing machine",
+    "prediction": "A deterministic Turing machine is the most basic Turing machine, which uses a fixed set of rules to determine its future actions",
+    "f1": 0.3076923076923077
+  },
+  {
+    "question": "What fixed set of factors determine the actions of a deterministic Turing machine",
+    "ground_truth": "rules",
+    "prediction": "A deterministic Turing machine is the most basic Turing machine, which uses a fixed set of rules to determine its future actions",
+    "f1": 0.08695652173913045
+  },
+  {
+    "question": "What is the term used to identify a deterministic Turing machine that has additional random bits?",
+    "ground_truth": "A probabilistic Turing machine",
+    "prediction": "A non-deterministic Turing machine is a determinis",
+    "f1": 0.5454545454545454
+  },
+  {
+    "question": "What type of Turing machine is capable of multiple actions and extends into a variety of computational paths?",
+    "ground_truth": "A non-deterministic Turing machine",
+    "prediction": "the Turing machine branches into many possible computational paths at each step, and if it solves the problem in any of these br",
+    "f1": 0.14814814814814817
+  },
+  {
+    "question": "What is the term given to algorithms that utilize random bits?",
+    "ground_truth": "randomized algorithms",
+    "prediction": "Algorithms that use random bits are called randomize",
+    "f1": 0.2
+  },
+  {
+    "question": "Turing machines are commonly employed to define what? ",
+    "ground_truth": "complexity classes",
+    "prediction": "Turing machines are not intended as a",
+    "f1": 0.0
+  },
+  {
+    "question": "What are two factors that directly effect how powerful a Turing machine may or may not be?",
+    "ground_truth": "time or space",
+    "prediction": "mputed on a Turing machine.",
+    "f1": 0.0
+  },
+  {
+    "question": "In the determination of complexity classes, what are two examples of types of Turing machines?",
+    "ground_truth": "probabilistic Turing machines, non-deterministic Turing machines",
+    "prediction": "Many types of Turing machines are used to define complexity classes, such as deterministic Turing machines, probabilistic Turing",
+    "f1": 0.3333333333333333
+  },
+  {
+    "question": "What is an example of a machine model that deviates from a generally accepted multi-tape Turing machine?",
+    "ground_truth": "random access machines",
+    "prediction": "It is a theoretical device that manipulates symbols contained on a strip of tape.",
+    "f1": 0.0
+  },
+  {
+    "question": "In considering Turing machines and alternate variables, what measurement left unaffected by conversion between machine models? ",
+    "ground_truth": "computational power",
+    "prediction": "Many machine models different from the standard multi-tape Turing machines have been proposed in the literature, for example ran",
+    "f1": 0.0
+  },
+  {
+    "question": "What two resources commonly consumed by alternate models are typically known to vary?",
+    "ground_truth": "time and memory",
+    "prediction": "models may vary.",
+    "f1": 0.0
+  },
+  {
+    "question": "What commonality do alternate machine models, such as random access machines, share with Turing machines?",
+    "ground_truth": "the machines operate deterministically",
+    "prediction": "Many types of Turing machines are used to define complexity classes, such as deterministic Turing machines, probabilistic Turing",
+    "f1": 0.0909090909090909
+  },
+  {
+    "question": "What type of Turing machine can be characterized by checking multiple possibilities at the same time?",
+    "ground_truth": "non-deterministic",
+    "prediction": "For instance, the language {xx | x is any binary string} can be solved in linear time on a multi-tape Turing mac",
+    "f1": 0.0
+  },
+  {
+    "question": "What often affects or facilitates ease of analysis in computational problems?",
+    "ground_truth": "unusual resources",
+    "prediction": "However, some computational problems are easier to analyze in terms of more unusual resources.",
+    "f1": 0.125
+  },
+  {
+    "question": "A non-deterministic Turing machine has the ability to capture what facet of useful analysis?",
+    "ground_truth": "mathematical models",
+    "prediction": "The non-deterministic Turing machine has very little to do with how we phys",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the most critical resource in the analysis of computational problems associated with non-deterministic Turing machines?",
+    "ground_truth": "time",
+    "prediction": "t non-deterministic time is a very important resource in analyzing computational problems.",
+    "f1": 0.15384615384615385
+  },
+  {
+    "question": "The time required to output an answer on a deterministic Turing machine is expressed as what?",
+    "ground_truth": "state transitions",
+    "prediction": "The time required by a deterministic Turing machine M on input x is the total numbe",
+    "f1": 0.0
+  },
+  {
+    "question": "Complexity theory classifies problems based on what primary attribute?",
+    "ground_truth": "difficulty",
+    "prediction": "Since complexity theory is interested in classifying problems based on their difficult",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the expression used to identify any given series of problems capable of being solved within time on a deterministic Turing machine?",
+    "ground_truth": "DTIME(f(n))",
+    "prediction": "ance, the set of problems solvable within time f(n) on a deterministic Turing machine is then denoted by DTIME(f(n)).",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the most critical resource measured to in assessing the determination of a Turing machine's ability to solve any given set of problems?",
+    "ground_truth": "time",
+    "prediction": "the Turing machine branches into many possible computational paths at each step, and if it solves the problem in any of these br",
+    "f1": 0.0
+  },
+  {
+    "question": "Time and space are both examples of what type of resource?",
+    "ground_truth": "complexity resources",
+    "prediction": "Although time and space are the most well-known complexity resources,",
+    "f1": 0.16666666666666669
+  },
+  {
+    "question": "A complexity resource can also be described as what other type of resource?",
+    "ground_truth": "computational resource",
+    "prediction": "any complexity measure can be viewed as a computational resource.",
+    "f1": 0.16666666666666669
+  },
+  {
+    "question": "What is typically used to broadly define complexity measures?",
+    "ground_truth": "Blum complexity axioms",
+    "prediction": "Other complexity measures used in complexity the",
+    "f1": 0.2
+  },
+  {
+    "question": "Communication complexity is an example of what type of measure?",
+    "ground_truth": "Complexity measures",
+    "prediction": "er specific complexity measure.",
+    "f1": 0.3333333333333333
+  },
+  {
+    "question": "Decision tree is an example of what type of measure?",
+    "ground_truth": "Complexity measures",
+    "prediction": "An example of a decision problem is the following.",
+    "f1": 0.0
+  },
+  {
+    "question": "What are the three primary expressions used to represent case complexity?",
+    "ground_truth": "best, worst and average",
+    "prediction": "Other complexity measures are also used, such as the amount o",
+    "f1": 0.0
+  },
+  {
+    "question": "Case complexity likelihoods provide variable probabilities of what general measure? ",
+    "ground_truth": "complexity measure",
+    "prediction": "er specific complexity measure.",
+    "f1": 0.3333333333333333
+  },
+  {
+    "question": "What is one common example of a critical complexity measure?",
+    "ground_truth": "time",
+    "prediction": "any complexity measure can be viewed as a computational resource.",
+    "f1": 0.0
+  },
+  {
+    "question": "Case complexities provide three likelihoods of what differing variable that remains the same size? ",
+    "ground_truth": "inputs",
+    "prediction": "The best, worst and average case complexity refer to three different ways of measuring the time complexity (or any other complex",
+    "f1": 0.0
+  },
+  {
+    "question": "What provides a solution to a list of integers provided as input that ned to be sorted?",
+    "ground_truth": "deterministic sorting algorithm quicksort",
+    "prediction": "This solves the problem of sorting a list of integers that is given as the input.",
+    "f1": 0.1
+  },
+  {
+    "question": "When extensive time is required to sort integers, this represents what case complexity?",
+    "ground_truth": "worst-case",
+    "prediction": "The complexity of an algorithm is usually taken to be its worst-case complexity, unless",
+    "f1": 0.13333333333333333
+  },
+  {
+    "question": "What is the expression used to denote a worst case complexity as expressed by time taken?",
+    "ground_truth": "O(n2)",
+    "prediction": "The complexity of an algorithm is usually taken to be its worst-case complexity, unless",
+    "f1": 0.0
+  },
+  {
+    "question": "Classification of resources is contingent on determining the upper and lower bounds of minimum time required by what?  ",
+    "ground_truth": "the most efficient algorithm",
+    "prediction": "space consumption), one is interested in proving upper and lower bounds on the minimum amount of time required by the most effic",
+    "f1": 0.15384615384615385
+  },
+  {
+    "question": "The analysis of a specific algorithm is typically assigned to what field of computational science?",
+    "ground_truth": "analysis of algorithms",
+    "prediction": "Analyzing a particular algorithm falls under the field of analysis of algorithms.",
+    "f1": 0.26666666666666666
+  },
+  {
+    "question": "Which bound of time is more difficult to establish?",
+    "ground_truth": "lower bounds",
+    "prediction": "In particular, larger instances will require more time to solve.",
+    "f1": 0.0
+  },
+  {
+    "question": "A specific algorithm demonstrating T(n) represents what measure of time complexity?",
+    "ground_truth": "upper bound",
+    "prediction": "n) for a problem requires showing that no algorithm can have time complexity lower than T(n).",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the colloquial phrase used to convey the continuum of algorithms with unlimited availability irrespective of time? ",
+    "ground_truth": "all possible algorithms",
+    "prediction": "The phrase \"all possible algorithms\" inc",
+    "f1": 0.2222222222222222
+  },
+  {
+    "question": "What expression is generally used to convey upper or lower bounds?",
+    "ground_truth": "big O notation",
+    "prediction": "space consumption), one is interested in proving upper and lower bounds on the minimum amount of time required by the most effic",
+    "f1": 0.0
+  },
+  {
+    "question": "What does a big O notation hide?",
+    "ground_truth": "constant factors and smaller terms",
+    "prediction": "notation one would write T(n) = O(n2).",
+    "f1": 0.0
+  },
+  {
+    "question": "How would one write T(n) = 7n2 + 15n + 40 in big O notation? ",
+    "ground_truth": "T(n) = O(n2)",
+    "prediction": "For instance, if T(n) = 7n2 + 15n + 40, in big O notation one would write T(n) = O(n2).",
+    "f1": 0.1739130434782609
+  },
+  {
+    "question": "Big O notation provides autonomy to upper and lower bounds with relationship to what? ",
+    "ground_truth": "the computational model",
+    "prediction": "Upper and lower bounds are usually stated using the big O notation, which hides constant factors and smaller terms.",
+    "f1": 0.09090909090909091
+  },
+  {
+    "question": "What has complicated definitions that prevent classification into a framework?",
+    "ground_truth": "complexity classes",
+    "prediction": "Of course, some complexity classes have complicated definitions that do not fit into this framework.",
+    "f1": 0.23529411764705882
+  },
+  {
+    "question": "Complexity classes are generally classified into what?",
+    "ground_truth": "framework",
+    "prediction": "quantum complexity classes.",
+    "f1": 0.0
+  },
+  {
+    "question": "Difficulty in establishing a framework for complexity classes can be caused by what variable?",
+    "ground_truth": "complicated definitions",
+    "prediction": "Many complexity classes are defined using the concept of a reduction.",
+    "f1": 0.0
+  },
+  {
+    "question": "Concrete bounding of computation time frequently produces complexity classes contingent upon what?",
+    "ground_truth": "chosen machine model",
+    "prediction": "But bounding the computation time above by some concrete function f(n) often yields complexity classes that depend on the chosen",
+    "f1": 0.08695652173913045
+  },
+  {
+    "question": "A multi-tape Turing machine requires what type of time for a solution?",
+    "ground_truth": "linear time",
+    "prediction": "string} can be solved in linear time on a multi-tape Turing machine, but necessarily requires quadratic time in the model of si",
+    "f1": 0.16666666666666669
+  },
+  {
+    "question": "A language solved in quadratic time implies the use of what type of Turing machine?",
+    "ground_truth": "single-tape Turing machines",
+    "prediction": "string} can be solved in linear time on a multi-tape Turing machine, but necessarily requires quadratic time in the model of si",
+    "f1": 0.08
+  },
+  {
+    "question": "What thesis specifies that a polynomial relationship exists within time complexities in a computational model? ",
+    "ground_truth": "Cobham-Edmonds thesis",
+    "prediction": "running time, Cobham-Edmonds thesis states that \"the time complexities in any two reasonable and general models of computation a",
+    "f1": 0.1904761904761905
+  },
+  {
+    "question": "Decision problems capable of being solved by a deterministic Turing machine while maintaining adherence to polynomial time belong to what class?",
+    "ground_truth": "complexity class P",
+    "prediction": "ision problems solvable by a deterministic Turing machine within polynomial time.",
+    "f1": 0.0
+  },
+  {
+    "question": "What are two examples of measurements are bound within algorithms to establish complexity classes?",
+    "ground_truth": "time or space",
+    "prediction": "Some important complexity classes of decision problems defined in this manner are the foll",
+    "f1": 0.0
+  },
+  {
+    "question": "What function is used by algorithms to define measurements like time or space?",
+    "ground_truth": "bounding",
+    "prediction": "time or space used by the algorithm.",
+    "f1": 0.0
+  },
+  {
+    "question": "Bounding of time and space or similar measurements is often used by algorithms to define what?",
+    "ground_truth": "complexity classes",
+    "prediction": "time or space used by the algorithm.",
+    "f1": 0.0
+  },
+  {
+    "question": "What are three examples of complexity classes associated with definitions established by probabilistic Turing machines?",
+    "ground_truth": "BPP, ZPP and RP",
+    "prediction": "Many types of Turing machines are used to define complexity classes, such as deterministic Turing machines, probabilistic Turing",
+    "f1": 0.0
+  },
+  {
+    "question": "AC and NC are complexity classes typically associated with what type of circuit?",
+    "ground_truth": "Boolean",
+    "prediction": "Other important complexity classes include BPP, ZPP and RP, which are defined using probabilistic Turing machines; AC and NC, wh",
+    "f1": 0.0
+  },
+  {
+    "question": "BQP and QMA are examples of complexity classes most commonly associated with what type of Turing machine?",
+    "ground_truth": "quantum",
+    "prediction": "Many types of Turing machines are used to define complexity classes, such as deterministic Turing machines, probabilistic Turing",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the expression used to represent a complexity class of counting problems?",
+    "ground_truth": "#P",
+    "prediction": "#P is an important complexity class of counting problems (not decision problems).",
+    "f1": 0.15384615384615385
+  },
+  {
+    "question": "IP and AM are most commonly defined by what type of proof system?",
+    "ground_truth": "Interactive",
+    "prediction": "ses like IP and AM are defined using Interactive proof systems.",
+    "f1": 0.16666666666666669
+  },
+  {
+    "question": "What is an example of a measurement within a complexity class that would create a bigger set of problems if the bounds were relaxed?",
+    "ground_truth": "computation time",
+    "prediction": "of complexity classes such that one is properly included in the other.",
+    "f1": 0.0
+  },
+  {
+    "question": "In what expression can one expect to find DTIME(n)",
+    "ground_truth": "DTIME(n2)",
+    "prediction": "gh DTIME(n) is contained in DTIME(n2), it would be interesting to know if the inclusion is strict.",
+    "f1": 0.0
+  },
+  {
+    "question": "What theorems are responsible for determining questions of time and space requirements?",
+    "ground_truth": "time and space hierarchy theorems",
+    "prediction": "For time and space requirements, the answer to such questions is given by the time and space",
+    "f1": 0.2727272727272727
+  },
+  {
+    "question": "Resources are constrained by hierarchy theorems to produce what?",
+    "ground_truth": "a proper hierarchy on the classes defined",
+    "prediction": "hierarchy theorems respectively.",
+    "f1": 0.2
+  },
+  {
+    "question": "What kind of statement is made in the effort of establishing the time and space requirements needed to enhance the ultimate number of problems solved?",
+    "ground_truth": "quantitative statements",
+    "prediction": "time or space is needed in order to increase the number of problems that can be solved.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the foundation for separation results within complexity classes?",
+    "ground_truth": "time and space hierarchy theorems",
+    "prediction": "The time and space hierarchy theorems form the basis for most separation results of complexity classes.",
+    "f1": 0.47619047619047616
+  },
+  {
+    "question": "What is responsible for constraining P according to the time hierarchy theorem?",
+    "ground_truth": "EXPTIME",
+    "prediction": "For instance, the time hierarchy theorem tells us that P is strictly contained in EXPTIM",
+    "f1": 0.0
+  },
+  {
+    "question": "Within what variable is L constrained according to the space hierarchy theorem?",
+    "ground_truth": "PSPACE",
+    "prediction": "E, and the space hierarchy theorem tells us that L is strictly contained in PSPACE.",
+    "f1": 0.0
+  },
+  {
+    "question": "What concept is frequently used to define complexity classes?",
+    "ground_truth": "reduction",
+    "prediction": "Many complexity classes are defined using the concept of a reduction.",
+    "f1": 0.0
+  },
+  {
+    "question": "Reduction essentially takes one problem and converts into what?",
+    "ground_truth": "another problem",
+    "prediction": "A reduction is a transformation of one problem into anothe",
+    "f1": 0.16666666666666669
+  },
+  {
+    "question": "According to reduction, if X and Y can be solved by the same algorithm then X performs what function in relationship to Y?",
+    "ground_truth": "reduces",
+    "prediction": "y problem in C can be reduced to X.",
+    "f1": 0.0
+  },
+  {
+    "question": "What are two examples of different types of reduction?",
+    "ground_truth": "Karp reductions and Levin reductions",
+    "prediction": "There are many different types of reductions, based on the method of reduction, such",
+    "f1": 0.0
+  },
+  {
+    "question": "Polynomial time reductions are an example of what?",
+    "ground_truth": "the bound on the complexity of reductions",
+    "prediction": "P, polynomial-time reductions are commonly used.",
+    "f1": 0.15384615384615383
+  },
+  {
+    "question": "What is the most frequently employed type of reduction?",
+    "ground_truth": "polynomial-time reduction",
+    "prediction": "The most commonly used reduction is a polynomial-time reduction.",
+    "f1": 0.3636363636363636
+  },
+  {
+    "question": "What equates to a squared integer according to polynomial time reduction?",
+    "ground_truth": "multiplying two integers",
+    "prediction": "The most commonly used reduction is a polynomial-time reduction.",
+    "f1": 0.0
+  },
+  {
+    "question": "What measurement of time is used in polynomial time reduction?",
+    "ground_truth": "polynomial time",
+    "prediction": "The most commonly used reduction is a polynomial-time reduction.",
+    "f1": 0.0
+  },
+  {
+    "question": "What would need to remain constant in a multiplication algorithm to produce the same outcome whether multiplying or squaring two integers?  ",
+    "ground_truth": "input",
+    "prediction": "r example, the problem of squaring an integer can be reduced to the problem of multiplying two integers.",
+    "f1": 0.0
+  },
+  {
+    "question": "According to polynomial time reduction squaring can ultimately be logically reduced to what?",
+    "ground_truth": "multiplication",
+    "prediction": "For example, the problem of squaring an integer can be reduced to",
+    "f1": 0.0
+  },
+  {
+    "question": "The complexity of problems often depends on what?",
+    "ground_truth": "the type of reduction being used",
+    "prediction": "Since complexity theory is interested in classifying problems based on their difficult",
+    "f1": 0.0
+  },
+  {
+    "question": "What would create a conflict between a problem X and problem C within the context of reduction? ",
+    "ground_truth": "if every problem in C can be reduced to X",
+    "prediction": "It captures the informal notion of a problem being at",
+    "f1": 0.10000000000000002
+  },
+  {
+    "question": "An algorithm for X which reduces to C would us to do what?",
+    "ground_truth": "solve any problem in C",
+    "prediction": "er than X, since an algorithm for X allows us to solve any problem in C.",
+    "f1": 0.38095238095238093
+  },
+  {
+    "question": "A problem set that that is hard for the expression NP can also be stated how?",
+    "ground_truth": "NP-hard",
+    "prediction": "the set of problems that are hard for NP is the set of NP-hard problems.",
+    "f1": 0.125
+  },
+  {
+    "question": "The hardest problems in NP can be analogously written as what class of problems?",
+    "ground_truth": "NP-complete",
+    "prediction": "e many problems could be equally hard, one might say that X is one of the hardest problems in C.) Thus the class of NP-complete",
+    "f1": 0.07692307692307693
+  },
+  {
+    "question": "NP complete problems contain the lowest likelihood of being located in what problem class?",
+    "ground_truth": "NP",
+    "prediction": "ne of the hardest problems in C.) Thus the class of NP-complete problems contains the most difficult problems in NP, in the sens",
+    "f1": 0.0
+  },
+  {
+    "question": "If P = NP is unsolved, and reduction is applied to a known NP-complete problem vis a vis \u03a02 to  \u03a01, what conclusion can be drawn for \u03a01?",
+    "ground_truth": "there is no known polynomial-time solution",
+    "prediction": "problem P = NP is not solved, being able to reduce a known NP-complete problem, \u03a02, to another problem, \u03a01, would indicate that",
+    "f1": 0.13793103448275862
+  },
+  {
+    "question": "If polynomial time can be utilized within an NP-complete problem, what does the imply P is equal to?",
+    "ground_truth": "NP",
+    "prediction": "uced to the set, finding an NP-complete problem that can be solved in polynomial time would mean that P = NP.",
+    "f1": 0.0
+  },
+  {
+    "question": "What complexity class is characterized by a computational tasks and efficient algorithms?",
+    "ground_truth": "P",
+    "prediction": "The complexity class P is often seen as a mathematical abstraction modeling those computational tasks that admit an efficient al",
+    "f1": 0.09523809523809523
+  },
+  {
+    "question": "What hypothesis is associated with the complexity class of P viewed as a mathematical abstraction with efficient algorithmic functionality?",
+    "ground_truth": "Cobham\u2013Edmonds thesis",
+    "prediction": "The complexity class P is often seen as a mathematical abstraction modeling those computational tasks that admit an efficient al",
+    "f1": 0.0
+  },
+  {
+    "question": "What complexity class is commonly characterized by unknown algorithms to enhance solvability?",
+    "ground_truth": "NP",
+    "prediction": "Thus, a typical complexity class has a definition like the following:",
+    "f1": 0.0
+  },
+  {
+    "question": "What is an example of a problem that rests within the NP complexity class?",
+    "ground_truth": "Boolean satisfiability problem",
+    "prediction": "istic Turing machines, it is easily observed that each problem in P is also member of the class NP.",
+    "f1": 0.09090909090909091
+  },
+  {
+    "question": "In what theoretical machine is it confirmed that a problem in P belies membership in the NP class?",
+    "ground_truth": "Turing machines",
+    "prediction": "istic Turing machines, it is easily observed that each problem in P is also member of the class NP.",
+    "f1": 0.09523809523809525
+  },
+  {
+    "question": "If P is ultimately proven to be equal tot NP, what effect would this have on the efficiency of problems?",
+    "ground_truth": "more efficient solutions",
+    "prediction": "It has been shown that if these two complexity classes are not equal then P is not equal to NP.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is a particular problem in biology that would benefit from determining that P = NP?",
+    "ground_truth": "protein structure prediction",
+    "prediction": "The P versus NP problem is one of the",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the prize offered for finding a solution to P=NP?",
+    "ground_truth": "$1,000,000",
+    "prediction": "There is a US$1,000,000 prize for resolving the problem.",
+    "f1": 0.0
+  },
+  {
+    "question": "Who demonstrated that P= NP implies problems not present in P or NP-complete?",
+    "ground_truth": "Ladner",
+    "prediction": "y are some of the very few NP problems not known to be in P or to be NP-complete.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the name for a problem that meets Ladner's assertion?",
+    "ground_truth": "NP-intermediate problems",
+    "prediction": "rithms that could be used to solve the same problem.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is an example of an NP-intermediate problem not known to exist in P or NP-complete? ",
+    "ground_truth": "graph isomorphism problem",
+    "prediction": "y are some of the very few NP problems not known to be in P or to be NP-complete.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the problem attributed to defining if two finite graphs are isomorphic?",
+    "ground_truth": "The graph isomorphism problem",
+    "prediction": "The graph isomorphism problem is the computational problem of determining whether two finite graphs are isomorphic.",
+    "f1": 0.4
+  },
+  {
+    "question": "What class is most commonly not ascribed to the graph isomorphism problem in spite of definitive determination?",
+    "ground_truth": "NP-complete",
+    "prediction": "The graph isomorphism problem is the computational problem of determining whether two finite graphs are isomorphic.",
+    "f1": 0.0
+  },
+  {
+    "question": "What finite hierarchy implies that the graph isomorphism problem is NP-complete? ",
+    "ground_truth": "polynomial time hierarchy",
+    "prediction": "If graph isomorphism is NP-complete, the pol",
+    "f1": 0.0
+  },
+  {
+    "question": "To what level would the polynomial time hierarchy collapse if graph isomorphism is NP-complete?",
+    "ground_truth": "second level",
+    "prediction": "If graph isomorphism is NP-complete, the polynomial time hierarchy collapses to its second level.",
+    "f1": 0.125
+  },
+  {
+    "question": "Who are commonly associated with the algorithm typically considered the most effective with respect to finite polynomial hierarchy and graph isomorphism?",
+    "ground_truth": "Laszlo Babai and Eugene Luks",
+    "prediction": "If graph isomorphism is NP-complete, the polynomial time hierarchy collapses to its second level.",
+    "f1": 0.0
+  },
+  {
+    "question": "What computational problem is commonly associated with prime factorization?",
+    "ground_truth": "The integer factorization problem",
+    "prediction": "The integer factorization problem is the computational problem of determining the prime factorization of a given integer.",
+    "f1": 0.38095238095238093
+  },
+  {
+    "question": "The integer factorization problem essentially seeks to determine if the value of of an input is less than what variable? ",
+    "ground_truth": "k",
+    "prediction": "d as a decision problem, it is the problem of deciding whether the input has a factor less than k.",
+    "f1": 0.0
+  },
+  {
+    "question": "That there currently exists no known integer factorization problem underpins what commonly used system?",
+    "ground_truth": "modern cryptographic systems",
+    "prediction": "No efficient integer factorization algorithm is known, and this fact forms the basis of sever",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the most well-known algorithm associated with the integer factorization problem?",
+    "ground_truth": "the general number field sieve",
+    "prediction": "No efficient integer factorization algorithm is known, and this fact forms the basis of sever",
+    "f1": 0.1
+  },
+  {
+    "question": "What is the unproven assumption generally ascribed to the value of complexity classes?",
+    "ground_truth": "suspected to be unequal",
+    "prediction": "For the complexity classes defined in this way, it is desirable to prove that relaxing the requirements on (say) computation tim",
+    "f1": 0.08
+  },
+  {
+    "question": "What is an expression that can be used to illustrate the suspected inequality of complexity classes?",
+    "ground_truth": "P \u2286 NP \u2286 PP \u2286 PSPACE",
+    "prediction": "PH, etc., it is possible that all these complexity classes collapse to one class.",
+    "f1": 0.0
+  },
+  {
+    "question": "Where can the complexity classes RP, BPP, PP, BQP, MA, and PH be located?",
+    "ground_truth": "between P and PSPACE",
+    "prediction": "Since there are many known complexity classes between P and PSPACE, such as RP, BPP, PP, BQP, MA,",
+    "f1": 0.27272727272727276
+  },
+  {
+    "question": "What evidence between and among complexity classes would signify a theoretical watershed for complexity theory?",
+    "ground_truth": "Proving that any of these classes are unequal",
+    "prediction": "Computational complexity theory is a branch of the theory of computation in theoretical computer science that focuses on classif",
+    "f1": 0.14814814814814814
+  },
+  {
+    "question": "In what complexity class do complement problems of NP problems exist?",
+    "ground_truth": "co-NP",
+    "prediction": "The complexity class NP, on the other hand, contains many problems",
+    "f1": 0.0
+  },
+  {
+    "question": "How do the yes/no answers of a complement problem of NP appear?",
+    "ground_truth": "reversed",
+    "prediction": "problems with the yes/no answers reversed) of NP problems.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is commonly believed to be the value relationship between P and co-NP",
+    "ground_truth": "not equal",
+    "prediction": "It is believed that NP is not equal to co-NP; howev",
+    "f1": 0.3076923076923077
+  },
+  {
+    "question": "What implication can be derived for P and NP if P and co-NP are established to be unequal?",
+    "ground_truth": "P is not equal to NP",
+    "prediction": "two complexity classes are not equal then P is not equal to NP.",
+    "f1": 0.5263157894736842
+  },
+  {
+    "question": "What variable is associated with all problems solved within logarithmic space?",
+    "ground_truth": "L",
+    "prediction": "Similarly, it is not known if L (the set of all problems that can be solved in logarithmic space) is strictly contained in P or",
+    "f1": 0.07692307692307693
+  },
+  {
+    "question": "Though unkown, what are the most commonly ascribed attributes of L in relation to P",
+    "ground_truth": "strictly contained in P or equal to P",
+    "prediction": "e that they are the ones most likely not to be in P.",
+    "f1": 0.1904761904761905
+  },
+  {
+    "question": "What lies between L and P that prevents a definitive determination of the relationship between L and P?",
+    "ground_truth": "complexity classes",
+    "prediction": "ierarchy theorem tells us that P is strictly contained in EXPTIME, and the space hierarchy theorem tells us that L is strictly c",
+    "f1": 0.0
+  },
+  {
+    "question": "What are two complexity classes between L and P?",
+    "ground_truth": "NL and NC",
+    "prediction": "two complexity classes are not equal then P is not equal to NP.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is unknown about the complexity classes between L and P that further prevents determining the value relationship between L and P?",
+    "ground_truth": "if they are distinct or equal classes",
+    "prediction": "xity classes between P and PSPACE, such as RP, BPP, PP, BQP, MA, PH, etc., it is possible that all these complexity classes coll",
+    "f1": 0.06451612903225806
+  },
+  {
+    "question": "Problems capable of theoretical solutions but consuming unreasonable time in practical application are known as what?",
+    "ground_truth": "intractable problems",
+    "prediction": "ite time), but which in practice take too long for their solutions to be useful, are known as intractable problems.",
+    "f1": 0.09090909090909091
+  },
+  {
+    "question": "Intractable problems lacking polynomial time solutions necessarily negate the practical efficacy of what type of algorithm?",
+    "ground_truth": "exponential-time algorithms",
+    "prediction": "y theory, problems that lack polynomial-time solutions are considered to be intractable for more than the smallest inputs.",
+    "f1": 0.0
+  },
+  {
+    "question": "If NP is not equal to P, viewed through this lens, what type of problems can also be considered intractable?",
+    "ground_truth": "NP-complete problems",
+    "prediction": "not the same as P, then the NP-complete problems are also intractable in this sense.",
+    "f1": 0.23529411764705882
+  },
+  {
+    "question": "What eponymous variation of arithmetic presents a decision problem not evidenced in P?",
+    "ground_truth": "Presburger arithmetic",
+    "prediction": "e, the decision problem in Presburger arithmetic has been shown not to be in P, yet algorithms have been written that solve the",
+    "f1": 0.16
+  },
+  {
+    "question": "Despite the Presburger problem, and in view of intractability, what has been done to establish solutions in reasonable periods of time?",
+    "ground_truth": "algorithms have been written",
+    "prediction": "ery small instances and in that sense the intractability of a problem is somewhat independent of technological progress.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is an example of a problem to which effective algorithms have provided a solution in spite of the intractability associated with the breadth of sizes?",
+    "ground_truth": "NP-complete knapsack problem",
+    "prediction": "ery small instances and in that sense the intractability of a problem is somewhat independent of technological progress.",
+    "f1": 0.09523809523809525
+  },
+  {
+    "question": "How quickly can an algorithm solve an NP-complete knapsack problem?",
+    "ground_truth": "in less than quadratic time",
+    "prediction": "Similarly, algorithms can solve the NP-complete knapsack problem over a wide range of",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the example of another problem characterized by large instances that is routinely solved by SAT handlers employing efficient algorithms?",
+    "ground_truth": "NP-complete Boolean satisfiability problem",
+    "prediction": "dle large instances of the NP-complete Boolean satisfiability problem.",
+    "f1": 0.46153846153846156
+  },
+  {
+    "question": "What tactic did researchers employ to offset the former deficit of work surrounding the complexity of algorithmic problems?",
+    "ground_truth": "foundations were laid out",
+    "prediction": "Before the actual research explicitly devoted to the complexity of algorithmic problems started off, numerous foundations were l",
+    "f1": 0.1818181818181818
+  },
+  {
+    "question": "Who was the most influential researcher among those grappling with the deficit of work surrounding the complexity posed by algorithmic problems?",
+    "ground_truth": "Alan Turing",
+    "prediction": "Most influential among these was",
+    "f1": 0.0
+  },
+  {
+    "question": "What theoretical device is attributed to Alan Turing?",
+    "ground_truth": "Turing machines",
+    "prediction": "It is a theoretical device that manipulates symbols contained on a strip of tape.",
+    "f1": 0.0
+  },
+  {
+    "question": "In what year was the Alan Turing's definitional model of a computing device received?",
+    "ground_truth": "1936",
+    "prediction": "Most influential among these was the definition of Turing machines by Alan Turing in 1936, which",
+    "f1": 0.0
+  },
+  {
+    "question": "In the most basic sense what did a Turing machine emulate?",
+    "ground_truth": "a computer",
+    "prediction": "mputed on a Turing machine.",
+    "f1": 0.28571428571428575
+  },
+  {
+    "question": "What paper is commonly considered the bellwether ushering in systematic studies computational complexity?",
+    "ground_truth": "On the Computational Complexity of Algorithms",
+    "prediction": "studies in computational complexity is attributed to the seminal paper \"On the Computational Complexity of Algorithms\" by Juris",
+    "f1": 0.3333333333333333
+  },
+  {
+    "question": "What individuals were responsible for authoring \"On the Computational Complexity of Algorithms\"?",
+    "ground_truth": "Juris Hartmanis and Richard Stearns",
+    "prediction": "studies in computational complexity is attributed to the seminal paper \"On the Computational Complexity of Algorithms\" by Juris",
+    "f1": 0.08695652173913045
+  },
+  {
+    "question": "In what year was Hatmanis and Stearn's seminal work in computational complexity received? ",
+    "ground_truth": "1965",
+    "prediction": "studies in computational complexity is attributed to the seminal paper \"On the Computational Complexity of Algorithms\" by Juris",
+    "f1": 0.0
+  },
+  {
+    "question": "What complex measurements were defined by \"On the Computational Complexity of Algorithms\"?",
+    "ground_truth": "time and space",
+    "prediction": "studies in computational complexity is attributed to the seminal paper \"On the Computational Complexity of Algorithms\" by Juris",
+    "f1": 0.0
+  },
+  {
+    "question": "In what year did Edmond's characterize a \"good\" algorithm?",
+    "ground_truth": "1965",
+    "prediction": "Also, in 1965 Edmonds defined a \"good\" algorithm as one wi",
+    "f1": 0.16666666666666669
+  },
+  {
+    "question": "Who provided a definition of linear bounded automata in 1960?",
+    "ground_truth": "John Myhill",
+    "prediction": "h specific bounded resources include  John Myhill's definition of linear bounded automata (Myhill 1960), Raymond Smullyan's stud",
+    "f1": 0.10526315789473684
+  },
+  {
+    "question": "In what year did Raymond Sullivan publish a study of rudimentary sets?",
+    "ground_truth": "1961",
+    "prediction": "f linear bounded automata (Myhill 1960), Raymond Smullyan's study of rudimentary sets (1961), as well as Hisao Yamada's paper on",
+    "f1": 0.0
+  },
+  {
+    "question": "In 1962, who was responsible for the authorship of a paper published on real time-computations?",
+    "ground_truth": "Hisao Yamada",
+    "prediction": "y of rudimentary sets (1961), as well as Hisao Yamada's paper on real-time computations (1962).",
+    "f1": 0.11764705882352941
+  },
+  {
+    "question": "What is the concrete choice typically assumed by most complexity-theoretic theorems?",
+    "ground_truth": "input encoding",
+    "prediction": "Even though some proofs of complexity-theoretic theorems regularly assume some concrete choice of input encoding, one tries to k",
+    "f1": 0.09523809523809525
+  },
+  {
+    "question": "In the effort of maintaining a level of abstraction, what choice is typically left independent?",
+    "ground_truth": "encoding",
+    "prediction": "eep the discussion abstract enough to be independent of the choice of encoding.",
+    "f1": 0.0
+  },
+  {
+    "question": "Who is responsible for axiomatic complexity theory?",
+    "ground_truth": "Manuel Blum",
+    "prediction": "nly used model in complexity theory.",
+    "f1": 0.0
+  },
+  {
+    "question": "What theorem was implicated by Manuel Blum's axioms?",
+    "ground_truth": "speed-up theorem",
+    "prediction": "In 1967, Manuel Blum developed an axiomatic complexity theory based on his axioms and proved an important result, the so-called,",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the paper written by Richard Karp in 1972 that ushered in a new era of understanding between intractability and NP-complete problems?",
+    "ground_truth": "\"Reducibility Among Combinatorial Problems\"",
+    "prediction": "In 1972, Richard Karp took this idea a leap forward with his landmark paper, \"Reducibility A",
+    "f1": 0.1
+  },
+  {
+    "question": "How many combinatory and graph theoretical problems, formerly believed to be plagued by intractability, did Karp's paper address?",
+    "ground_truth": "21",
+    "prediction": "combinatorial and graph theoretical problems, each infamous for its computational intractability, are NP-complete.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is Southern California often abbreviated as?",
+    "ground_truth": "SoCal",
+    "prediction": "Southern California.",
+    "f1": 0.0
+  },
+  {
+    "question": "Despite being traditionall described as \"eight counties\", how many counties does this region actually have?",
+    "ground_truth": "10 counties",
+    "prediction": "The region is traditionally described as \"eight counties\", based on demographics and economic ties: Imperial,",
+    "f1": 0.0
+  },
+  {
+    "question": "What is a major importance of Southern California in relation to California and the United States?",
+    "ground_truth": "economic center",
+    "prediction": "Southern California's economy is diverse and one of the largest in the United States.",
+    "f1": 0.0
+  },
+  {
+    "question": "What are the ties that best described what the \"eight counties\" are based on?",
+    "ground_truth": "demographics and economic ties",
+    "prediction": "The region is traditionally described as \"eight counties\", based on demographics and economic ties: Imperial,",
+    "f1": 0.31578947368421056
+  },
+  {
+    "question": "The reasons for the las two counties to be added are based on what?",
+    "ground_truth": "historical political divisions",
+    "prediction": "The region is traditionally described as \"eight counties\", based on demographics and economic ties: Imperial,",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the name of the region that is not defined by the eight or 10 county definitions?",
+    "ground_truth": "Southern California Megaregion",
+    "prediction": "The 8- and 10-county definitions are not used for the greater Southern California Megaregion, one of the 11 megaregions of the U",
+    "f1": 0.16
+  },
+  {
+    "question": "How many megaregions are there in the United States?",
+    "ground_truth": "11",
+    "prediction": "uthern California Megaregion, one of the 11 megaregions of the United States.",
+    "f1": 0.15384615384615385
+  },
+  {
+    "question": "What is the name of the state that the megaregion expands to in the east?",
+    "ground_truth": "Nevada",
+    "prediction": "The megaregion's area is more expansive, extending",
+    "f1": 0.0
+  },
+  {
+    "question": "Which border does the megaregion extend over?",
+    "ground_truth": "Mexican",
+    "prediction": "The megaregion's area is more expansive, extending",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the name of the area past the border that the megaregion extends into?",
+    "ground_truth": "Tijuana",
+    "prediction": "The megaregion's area is more expansive, extending east into Las Vegas, Nevada, and south across the Mexican borde",
+    "f1": 0.0
+  },
+  {
+    "question": "Which coastline does Southern California touch?",
+    "ground_truth": "Pacific",
+    "prediction": "Southern California.",
+    "f1": 0.0
+  },
+  {
+    "question": "How many metropolitan areas does Southern California's population encompass?",
+    "ground_truth": "seven",
+    "prediction": "Many of southern California's most developed",
+    "f1": 0.0
+  },
+  {
+    "question": "How many inhabitants does the Los Angeles area contain?",
+    "ground_truth": "12 million",
+    "prediction": "r Los Angeles Area and the Inland Empire, and down to Greater San Diego.",
+    "f1": 0.0
+  },
+  {
+    "question": "Which of the three heavily populated areas has the least number of inhabitants?",
+    "ground_truth": "San Diego",
+    "prediction": "Out of these, three are heavy populated areas: the Los Angeles area with over 12 million in",
+    "f1": 0.0
+  },
+  {
+    "question": "How many people does the Greater Los Angeles Area have?",
+    "ground_truth": "17.5 million",
+    "prediction": "combined to make up the Greater Los Angeles Area with over 17.5 million people.",
+    "f1": 0.25
+  },
+  {
+    "question": "What is the name of the water body that is found to the east?",
+    "ground_truth": "Colorado River",
+    "prediction": "To the east is the Colorado Desert and the Colorado River at the border with Arizona, and the Mojave Desert at the border with t",
+    "f1": 0.14814814814814814
+  },
+  {
+    "question": "What is the name of the desert on the border of Arizona?",
+    "ground_truth": "Colorado Desert",
+    "prediction": "border with Arizona, and the Mojave Desert at the border with the state of Nevada.",
+    "f1": 0.11764705882352941
+  },
+  {
+    "question": "What is the name of the desert near the border of Nevada?",
+    "ground_truth": "Mojave Desert",
+    "prediction": "border with Arizona, and the Mojave Desert at the border with the state of Nevada.",
+    "f1": 0.23529411764705882
+  },
+  {
+    "question": "What is the name of the border to the south?",
+    "ground_truth": "Mexico\u2013United States border",
+    "prediction": "To the south is the Mexico\u2013United States border.",
+    "f1": 0.36363636363636365
+  },
+  {
+    "question": "The cities of Los Angeles and San Diego are a part of which state?",
+    "ground_truth": "California",
+    "prediction": "areas are Los Angeles, Orange County, San Diego, and Riverside-San Bernardino, each of which is the center of its respective me",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the population of Los Angeles?",
+    "ground_truth": "3,792,621",
+    "prediction": "With a population of 3,792,621, Los Angeles is the most populous city in California and the second most populous in th",
+    "f1": 0.0
+  },
+  {
+    "question": "Which city is the most populous in California?",
+    "ground_truth": "Los Angeles",
+    "prediction": "t populous city in California and the second most populous in the United States.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the eighth most populous city in the nation?",
+    "ground_truth": "San Diego",
+    "prediction": "e eighth most populous in the nation.",
+    "f1": 0.0
+  },
+  {
+    "question": "In which cardinal direction from Los Angeles is San Diego?",
+    "ground_truth": "south",
+    "prediction": "un out of Downtown Los Angeles, connecting Los Angeles, Ventura, San Bernardino, Riverside, Orange, and San Diego counties with",
+    "f1": 0.0
+  },
+  {
+    "question": "Orange, San Diego, Riverside and San Bernardino make up four of the five counties. What is the name of the last county?",
+    "ground_truth": "Los Angeles",
+    "prediction": "Its counties of Los Angeles, Orange, San Diego, San Bernardino, and Riverside are the five most populous in the state and all ar",
+    "f1": 0.08
+  },
+  {
+    "question": "What country are all the counties in?",
+    "ground_truth": "United States",
+    "prediction": "This territory was to include all the counties up to the then much larger Tulare County (that included what is now Ki",
+    "f1": 0.0
+  },
+  {
+    "question": "What are Los Angeles, Orange, San Diego, San Bernardino and Riverside?",
+    "ground_truth": "counties",
+    "prediction": "Los Angeles, Orange, Riverside, San Bernardino, San Diego, Santa Barbara, and Ventura.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the lowest ranking one of the counties could have in terms of most populous counties in the United States?",
+    "ground_truth": "15",
+    "prediction": "e in the top 15 most populous counties in the United States.",
+    "f1": 0.15384615384615385
+  },
+  {
+    "question": "What is the smallest geographical region discussed?",
+    "ground_truth": "counties",
+    "prediction": "Each region is further divided into many",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the name given to the district that is associated with the motion picture industry?",
+    "ground_truth": "Hollywood",
+    "prediction": "within Los Angeles, is also a name associated with the motion picture industry.",
+    "f1": 0.0
+  },
+  {
+    "question": "Which city does the Hollywood district belong to?",
+    "ground_truth": "Los Angeles",
+    "prediction": "Hollywood, a district",
+    "f1": 0.0
+  },
+  {
+    "question": "Which company owns ABC?",
+    "ground_truth": "The Walt Disney Company",
+    "prediction": "Headquartered in southern California are The Walt Disney Company (which also owns ABC), Sony Pictures, Universal",
+    "f1": 0.4
+  },
+  {
+    "question": "Other than the motion picture and television industry, what other major industry is centered in Los Angeles?",
+    "ground_truth": "music",
+    "prediction": "The motion picture, television, and music industry is centered on the Los Angeles in southern California.",
+    "f1": 0.11764705882352941
+  },
+  {
+    "question": "Other than Universal and Warner Brothers, what other company runs a major record company?",
+    "ground_truth": "Sony",
+    "prediction": "Universal, Warner Brothers, and Sony also run major record com",
+    "f1": 0.18181818181818182
+  },
+  {
+    "question": "Other than surf, what other culture is southern California home to?",
+    "ground_truth": "skateboard",
+    "prediction": "Southern California is also home to a large home grown surf and skateboard culture.",
+    "f1": 0.13333333333333333
+  },
+  {
+    "question": "What is the name of the professional skateboarder that lives in southern California?",
+    "ground_truth": "Tony Hawk",
+    "prediction": "ard, and professional snowboarder Shaun White live in southern California.",
+    "f1": 0.0
+  },
+  {
+    "question": "What famous snowbaorder lives in southern California?",
+    "ground_truth": "Shaun White",
+    "prediction": "Southern California.",
+    "f1": 0.0
+  },
+  {
+    "question": "Southern California is second to which island in terms of famous serf breaks?",
+    "ground_truth": "Oahu",
+    "prediction": "untington Beach, and Malibu, and it is second only to the island of Oahu in terms of famous surf breaks.",
+    "f1": 0.09523809523809523
+  },
+  {
+    "question": "What is the shortened name of the annual yacht race that takes place?",
+    "ground_truth": "Transpac",
+    "prediction": "The annual Transpacific Yacht Race, or Transpac, from Los Angeles to Hawaii, is one of yachting's premier events.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the name of the desert city?",
+    "ground_truth": "Palm Springs",
+    "prediction": "for its popular beaches, and the desert city of Palm Springs is popular for its resort feel and nearby open spaces.",
+    "f1": 0.17391304347826084
+  },
+  {
+    "question": "Other than the desert city why do many locals and tourists frequent southern California?",
+    "ground_truth": "beaches",
+    "prediction": "Many locals and tourists frequent the southern California coast for its popular beaches, and the desert city of Palm Springs is",
+    "f1": 0.0
+  },
+  {
+    "question": "Which region of California is Palm Springs located in?",
+    "ground_truth": "southern",
+    "prediction": "Many locals and tourists frequent the southern California coast for its popular beaches, and the desert city of Palm Springs is",
+    "f1": 0.0909090909090909
+  },
+  {
+    "question": "Other than for its resort feel, what is Palm Springs popular for?",
+    "ground_truth": "open spaces",
+    "prediction": "for its popular beaches, and the desert city of Palm Springs is popular for its resort feel and nearby open spaces.",
+    "f1": 0.08695652173913042
+  },
+  {
+    "question": "Geographically speaking, where is California's north - south midway point in terms of latitude?",
+    "ground_truth": "37\u00b0 9' 58.23\"",
+    "prediction": "Geographically, California's north-south midway point lies at exactl",
+    "f1": 0.0
+  },
+  {
+    "question": "How many miles south of San Jose is the north - south midway point located?",
+    "ground_truth": "11",
+    "prediction": "raphically, California's north-south midway point lies at exactly 37\u00b0 9' 58.23\" latitude, around 11 miles (18 km) south of San J",
+    "f1": 0.0909090909090909
+  },
+  {
+    "question": "The term \"southern\" California usually refers to how many of the southern-most counties of the state?",
+    "ground_truth": "ten",
+    "prediction": "rn California), the term \"southern California\" usually refers to the ten southern-most counties of the state.",
+    "f1": 0.11764705882352941
+  },
+  {
+    "question": "Other than Point Conception, what landmark is used in the other definition of southern California?",
+    "ground_truth": "Tehachapi Mountains",
+    "prediction": "Another definition for southern California uses Point Conception and the Tehachapi Mountains as the n",
+    "f1": 0.23529411764705882
+  },
+  {
+    "question": "Point Conception is an example of a landmark among what boundary of southern California?",
+    "ground_truth": "northern",
+    "prediction": "d definitions of what constitutes southern California vary.",
+    "f1": 0.0
+  },
+  {
+    "question": "Which country used to rule California?",
+    "ground_truth": "Mexico",
+    "prediction": "Southern California is a majo",
+    "f1": 0.0
+  },
+  {
+    "question": "Los Angeles is in the lower part of what?",
+    "ground_truth": "Alta California",
+    "prediction": "tween the Californios of Monterey in the upper part and Los Angeles in the lower part of Alta California.",
+    "f1": 0.09523809523809525
+  },
+  {
+    "question": "Which Californio is located in the upper part?",
+    "ground_truth": "Monterey",
+    "prediction": "les in the lower part of Alta California.",
+    "f1": 0.0
+  },
+  {
+    "question": "What was the name of the legislation passed in 1850?",
+    "ground_truth": "the Missouri Compromise",
+    "prediction": "It was approved overwhelmingly by nearly 75% of voters in the proposed Territory of",
+    "f1": 0.11764705882352941
+  },
+  {
+    "question": "The legislation allowed California to be admitted to the Union as what kind of state?",
+    "ground_truth": "free",
+    "prediction": "Compromise of 1850 enabled California to be admitted to the Union as a free state, preventing southern California from becoming",
+    "f1": 0.09523809523809523
+  },
+  {
+    "question": "Other than land laws, what else were the Californios dissatisfied with?",
+    "ground_truth": "inequitable taxes",
+    "prediction": "Subsequently, Californios (dissatisfied with inequitable taxes and land laws) and pro-slavery southerners in the lightly populat",
+    "f1": 0.2222222222222222
+  },
+  {
+    "question": "What was the name given to the regions in which the pro - slavery southerners lived?",
+    "ground_truth": "Cow Counties",
+    "prediction": "Subsequently, Californios (dissatisfied with inequitable taxes and land laws) and pro-slavery southerners in the lightly populat",
+    "f1": 0.0
+  },
+  {
+    "question": "How many times did southern California attempt to achieve a separate statehood?",
+    "ground_truth": "three",
+    "prediction": "ed \"Cow Counties\" of southern California attempted three times in the 1850s to achieve a separate statehood or territorial statu",
+    "f1": 0.09523809523809523
+  },
+  {
+    "question": "What was the percentage of people that voted in favor of the Pico Act of 1859?",
+    "ground_truth": "75",
+    "prediction": "The last attempt, the Pico Act of 1859, was passed by the California State Legislature and",
+    "f1": 0.0
+  },
+  {
+    "question": "Which Senator was a strong advocate for the Pico Act?",
+    "ground_truth": "Milton Latham",
+    "prediction": "with a strong advocate in Senator Milton Latham.",
+    "f1": 0.2
+  },
+  {
+    "question": "Which newspaper defined southern California?",
+    "ground_truth": "Los Angeles Times",
+    "prediction": "Southern California.",
+    "f1": 0.0
+  },
+  {
+    "question": "In which year did the newspaper define southern California?",
+    "ground_truth": "1900",
+    "prediction": "Southern California.",
+    "f1": 0.0
+  },
+  {
+    "question": "In which year did the newspaper change its previous definition?",
+    "ground_truth": "1999",
+    "prediction": "the definition of Turing machines by Alan Turing in 1936, which turned out to be a very robust and flexible simplification of a",
+    "f1": 0.0
+  },
+  {
+    "question": "What was the newer county added to the list?",
+    "ground_truth": "Imperial",
+    "prediction": "he Times added a newer county\u2014Imperial\u2014to that list.",
+    "f1": 0.0
+  },
+  {
+    "question": "How many counties initially made up the definition of southern California?",
+    "ground_truth": "seven",
+    "prediction": "rn California), the term \"southern California\" usually refers to the ten southern-most counties of the state.",
+    "f1": 0.0
+  },
+  {
+    "question": "Which organizations most commonly divide and promote the state?",
+    "ground_truth": "regional tourism groups",
+    "prediction": "The state is most commonly divided and promoted by its regional tourism groups as consisting of northern, central, and southern",
+    "f1": 0.2608695652173913
+  },
+  {
+    "question": "Other than the Automobile Club of Southern California, what other AAA Auto Club chose to simplify the divide?",
+    "ground_truth": "California State Automobile Association",
+    "prediction": "ifornia State Automobile Association and the Automobile Club of Southern California, choose to simplify matters by dividing the",
+    "f1": 0.27272727272727276
+  },
+  {
+    "question": "The two AAA clubs divided the state into a northern and southern California as opposed to what point of view?",
+    "ground_truth": "three-region",
+    "prediction": "When the state is divided into two areas (northern and southern California), the term \"southern California\" usually refers to",
+    "f1": 0.0
+  },
+  {
+    "question": "Which mountain range influenced the split of the regions?",
+    "ground_truth": "Tehachapis",
+    "prediction": "Another influence is the geographical phrase South of the Tehachapis, which would split the sout",
+    "f1": 0.0
+  },
+  {
+    "question": "In the definition based off the mountain range, which region would the desert portions of north Los Angeles County be included in?",
+    "ground_truth": "southern",
+    "prediction": "at definition, the desert portions of north Los Angeles County and eastern Kern and San Bernardino Counties would be included in",
+    "f1": 0.0
+  },
+  {
+    "question": "Where does southern California's megalopolis standard in terms of population nationwide?",
+    "ground_truth": "third",
+    "prediction": "Many of southern California's most developed",
+    "f1": 0.0
+  },
+  {
+    "question": "Although southern california consts of a heavily developed urban environment, how much of it has been left undeveloped?",
+    "ground_truth": "vast areas",
+    "prediction": "Southern California consists of a heavily developed urban environment, home to some of the largest urban areas in the state, alo",
+    "f1": 0.08695652173913042
+  },
+  {
+    "question": "Southern Californian communities are well known to be large, spread - out, and what other characteristic?",
+    "ground_truth": "suburban",
+    "prediction": "southern California is famous for its large, spread-out, suburban communities and use of automobiles and highways.",
+    "f1": 0.11764705882352941
+  },
+  {
+    "question": "Outside of its use of automobiles, what else is southern California famous for using?",
+    "ground_truth": "highways",
+    "prediction": "southern California is famous for its large, spread-out, suburban communities and use of automobiles and highways.",
+    "f1": 0.0
+  },
+  {
+    "question": "What kind of region can be found inside the urban area of southern California?",
+    "ground_truth": "international metropolitan",
+    "prediction": "nd eastern Kern and San Bernardino Counties would be included in the southern California region due to their remoteness from the",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the main gap to continued urbanization?",
+    "ground_truth": "Camp Pendleton",
+    "prediction": "Traveling south on Interstate 5, the main gap to continued urbanization is Camp Pendleton.",
+    "f1": 0.125
+  },
+  {
+    "question": "Other than the San Diego metropolitan area, what other area are the communities along Interstates 15 and 215 connected with?",
+    "ground_truth": "Inland Empire",
+    "prediction": "The cities and communities along Interstate 15 and Interstate 215 are so inter-related that Temecula",
+    "f1": 0.0
+  },
+  {
+    "question": "Who considers Los Angeles County to be a separate metropolitan area?",
+    "ground_truth": "United States Census Bureau",
+    "prediction": "opolitan areas, or MSAs: the Los Angeles metropolitan area, consisting of Los Angeles and Orange counties; the Inland Empire, co",
+    "f1": 0.0
+  },
+  {
+    "question": "Other than L.A. which other county do many people commute to?",
+    "ground_truth": "Orange",
+    "prediction": "While many commute to L.A.",
+    "f1": 0.0
+  },
+  {
+    "question": "Other than the 1980s, in which decade did most of San Bernardino and Riverside Counties develop?",
+    "ground_truth": "1990s",
+    "prediction": "ent, as most of San Bernardino and Riverside Counties (the non-desert portions) were developed in the 1980s and 1990s.",
+    "f1": 0.0
+  },
+  {
+    "question": "What kind of climate does southern California maintain?",
+    "ground_truth": "Mediterranean",
+    "prediction": "winters are 70-50's, usually all of Southern California have Mediterranean climate.",
+    "f1": 0.16666666666666669
+  },
+  {
+    "question": "Other than many sunny days, what characteristic is typical for the climate in souther California?",
+    "ground_truth": "infrequent rain",
+    "prediction": "Southern California contains a Mediterranean climate, with infrequent rain and many sunny days.",
+    "f1": 0.2666666666666667
+  },
+  {
+    "question": "What is the low end of the temperature range in summer?",
+    "ground_truth": "60's",
+    "prediction": "But snow is very rare in the Southwest of t",
+    "f1": 0.0
+  },
+  {
+    "question": "How frequent is snow in the Southwest of the state?",
+    "ground_truth": "very rare",
+    "prediction": "But snow is very rare in the Southwest of t",
+    "f1": 0.33333333333333337
+  },
+  {
+    "question": "What is the high end of the temperature range in winter?",
+    "ground_truth": "70",
+    "prediction": "But snow is very rare in the Southwest of t",
+    "f1": 0.0
+  },
+  {
+    "question": "What term best describes southern California's collection of landscapes?",
+    "ground_truth": "varied",
+    "prediction": "Southern California consists of one of the more varied collections of geologic, topographic, and natural ecosystem landscapes in",
+    "f1": 0.10526315789473684
+  },
+  {
+    "question": "The region spans starting at islands found in which body of water?",
+    "ground_truth": "Pacific Ocean",
+    "prediction": "The region spans from Pacific Ocean islands, shorelines,",
+    "f1": 0.4
+  },
+  {
+    "question": "What type of landscapes other than geologic and natural ecosystem landscapes can be found in southern California?",
+    "ground_truth": "topographic",
+    "prediction": "Southern California consists of one of the more varied collections of geologic, topographic, and natural ecosystem landscapes in",
+    "f1": 0.0
+  },
+  {
+    "question": "The region spans which mountains other than the Transverse ranges?",
+    "ground_truth": "Peninsular",
+    "prediction": "The region spans from Pacific Ocean islands, shorelines, beaches, and coastal plains, through the Transverse and Peninsu",
+    "f1": 0.0
+  },
+  {
+    "question": "The mountain ranges tail off into what kind of geographical formation?",
+    "ground_truth": "valleys",
+    "prediction": "beaches, and coastal plains, through the Transverse and Peninsular Ranges with their peaks, into the large and small interior v",
+    "f1": 0.0
+  },
+  {
+    "question": "How many earthquakes does southern California experience in a year?",
+    "ground_truth": "10,000",
+    "prediction": "Each year, the southern California area has about 10,000 earthquakes.",
+    "f1": 0.18181818181818182
+  },
+  {
+    "question": "Generally speaking, what size are the earthquakes that hit southern California?",
+    "ground_truth": "small",
+    "prediction": "Each year, the southern California area has about 10,000 earthquakes.",
+    "f1": 0.0
+  },
+  {
+    "question": "What magnitude was the 1994 Northridge earthquake?",
+    "ground_truth": "6.7",
+    "prediction": "The magnitude 6.7 1994 Northridge earthquake was particularly destructive, causing a sub",
+    "f1": 0.15384615384615385
+  },
+  {
+    "question": "What kind of destruction did the 1994 earthquake cause the most of in US history?",
+    "ground_truth": "property damage",
+    "prediction": "It caused the most property damage of any earthquake in U.S.",
+    "f1": 0.3076923076923077
+  },
+  {
+    "question": "How much was the 1994 earthquake estimated to have cost?",
+    "ground_truth": "$20 billion",
+    "prediction": "The magnitude 6.7 1994 Northridge earthquake was particularly destructive, causing a sub",
+    "f1": 0.0
+  },
+  {
+    "question": "Which fault can produce a magnitude earthquake of 8.0?",
+    "ground_truth": "San Andreas",
+    "prediction": "h as the San Andreas Fault, which can produce a magnitude 8.0 event.",
+    "f1": 0.2666666666666667
+  },
+  {
+    "question": "What magnitude of earthquake can many faults produce?",
+    "ground_truth": "6.7",
+    "prediction": "Many faults are able to produce a magnitude 6.7+ earthquake, such as the San Andreas Fault, which can produce a magnitude 8.0 ev",
+    "f1": 0.0
+  },
+  {
+    "question": "Other than the San Jacinto Fault, and the Elsinore Fault, name one other fault.",
+    "ground_truth": "Puente Hills",
+    "prediction": "Other faults include the San Jacinto Fault, the Puente Hills Fault, and the Elsinore Fault Zone.",
+    "f1": 0.2222222222222222
+  },
+  {
+    "question": "Which organization released a California Earthquake forecast?",
+    "ground_truth": "USGS",
+    "prediction": "The USGS has released a California Earthquake forecast which models Earthquake occurrence",
+    "f1": 0.15384615384615385
+  },
+  {
+    "question": "The earthquake forecast models what features of earthquakes in California?",
+    "ground_truth": "occurrence",
+    "prediction": "lifornia Earthquake forecast which models Earthquake occurrence in California.",
+    "f1": 0.19999999999999998
+  },
+  {
+    "question": "Southern California's distinctive regions are divided culturally, politically and what other trait?",
+    "ground_truth": "economically",
+    "prediction": "Southern California is divided culturally, politically, and economically into distinctive regions, each containing its own cultu",
+    "f1": 0.11764705882352941
+  },
+  {
+    "question": "Outside of national recognition, what other kind of recognition do some of the cities get?",
+    "ground_truth": "global",
+    "prediction": "re and atmosphere, anchored usually by a city with both national and sometimes global recognition, which are often the hub of ec",
+    "f1": 0.08695652173913045
+  },
+  {
+    "question": "Cities that anchor the regions are often the hub for what kind of activity?",
+    "ground_truth": "economic",
+    "prediction": "and sometimes global recognition, which are often the hub of economic activity for its respective region and being home to many",
+    "f1": 0.0909090909090909
+  },
+  {
+    "question": "Southern California had a population of 22,680,010 according to the census from which year?",
+    "ground_truth": "2010",
+    "prediction": "As of the 2010 United States Census, southern California has a population of 22,680,010.",
+    "f1": 0.13333333333333333
+  },
+  {
+    "question": "What does southern California have a reputation for?",
+    "ground_truth": "high growth rates",
+    "prediction": "Southern California.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the state average growth rate?",
+    "ground_truth": "10.0%",
+    "prediction": "Despite a reputation for high growth rates, southern California's rate grew less than the state average",
+    "f1": 0.0
+  },
+  {
+    "question": "What kind of economy did northern California start to grow in the 2000s?",
+    "ground_truth": "tech-oriented",
+    "prediction": "of 10.0% in the 2000s as California's growth became concentrated in the northern part of the state due to a stronger, tech-orie",
+    "f1": 0.0
+  },
+  {
+    "question": "Which region began to grow and assert itself in the 2000s?",
+    "ground_truth": "Greater Sacramento",
+    "prediction": "in the United States.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the name associated with the eight areas that make up a part of southern California?",
+    "ground_truth": "Metropolitan Statistical Areas",
+    "prediction": "culturally distinct areas but as a whole combine to create the southern California atmosphere.",
+    "f1": 0.11764705882352941
+  },
+  {
+    "question": "How many extended metropolitan areas are there?",
+    "ground_truth": "two",
+    "prediction": "Bakersfield metropolitan areas.",
+    "f1": 0.0
+  },
+  {
+    "question": "Each of the extended metropolitan areas has a population that exceeds what number?",
+    "ground_truth": "five million",
+    "prediction": "e to two extended metropolitan areas that exceed five million in population.",
+    "f1": 0.2857142857142857
+  },
+  {
+    "question": "What does the El Centro metropolitan area and San Diego-Carslbad-San Marcos metropolitan area form?",
+    "ground_truth": "Southern Border Region",
+    "prediction": "le the El Centro metropolitan area and San Diego-Carlsbad-San Marcos metropolitan area form the Southern Border Region.",
+    "f1": 0.2
+  },
+  {
+    "question": "What is the population of the Greater Los Angeles Area?",
+    "ground_truth": "17,786,419",
+    "prediction": "These are the Greater Los Angeles Area at 17,786,41",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the largest city in all of California?",
+    "ground_truth": "Los Angeles",
+    "prediction": "es in all of California (and two of the eight largest cities in the United States).",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the population of the second largest city in California?",
+    "ground_truth": "1.3 million",
+    "prediction": "t populous city in California and the second most populous in the United States.",
+    "f1": 0.0
+  },
+  {
+    "question": "How many cities in southern California have over 200,000 residents?",
+    "ground_truth": "twelve",
+    "prediction": "In southern California there are also twelve cities with more than 200,000 residents and 34 cities over 100,",
+    "f1": 0.10526315789473684
+  },
+  {
+    "question": "There are 34 cities in southern California that have a population exceeding what number?",
+    "ground_truth": "100,000",
+    "prediction": "In southern California there are also twelve cities with more than 200,000 residents and 34 cities over 100,",
+    "f1": 0.0
+  },
+  {
+    "question": "Other than San Bernardino, which other developed southern Californian city is not in close proximity to the coast?",
+    "ground_truth": "Riverside",
+    "prediction": "cities lie along or in close proximity to the coast, with the exception of San Bernardino and Riverside.",
+    "f1": 0.0
+  },
+  {
+    "question": "What resource is the economy of southern California depedent on?",
+    "ground_truth": "petroleum",
+    "prediction": "Southern California's economy is diverse and one of the largest in the United States.",
+    "f1": 0.0
+  },
+  {
+    "question": "Southern California is most famous for tourism and what notably named district?",
+    "ground_truth": "Hollywood",
+    "prediction": "Southern California is famous for tourism and Hollywood (film, television, and music).",
+    "f1": 0.15384615384615385
+  },
+  {
+    "question": "The region was a leader in what event between 2001 - 2007?",
+    "ground_truth": "the housing bubble",
+    "prediction": "The region was a leader in the housing bubbl",
+    "f1": 0.3333333333333333
+  },
+  {
+    "question": "Southern California's economy can be described as one of the largest in the United States and what other characteristic?",
+    "ground_truth": "diverse",
+    "prediction": "Southern California's economy is diverse and one of the largest in the United States.",
+    "f1": 0.13333333333333333
+  },
+  {
+    "question": "What was the effect of the housing crash on the region?",
+    "ground_truth": "heavily impacted",
+    "prediction": "The region was a leader in the housing bubbl",
+    "f1": 0.0
+  },
+  {
+    "question": "Motion pictures, petroleum and aircraft manufacturing have been major industries since which decade?",
+    "ground_truth": "1920s",
+    "prediction": "Since the 1920s, motion pictures, petroleum and aircraft manufacturing have been major industries.",
+    "f1": 0.0
+  },
+  {
+    "question": "What characteristic best describes the agricultural regions that could be found?",
+    "ground_truth": "richest",
+    "prediction": "In one of the richest agricultural regions in the U.S., cattle and citrus were major industri",
+    "f1": 0.11764705882352941
+  },
+  {
+    "question": "Which type of livestock was the argricultural region known for?",
+    "ground_truth": "cattle",
+    "prediction": "The region was a leader in the housing bubbl",
+    "f1": 0.0
+  },
+  {
+    "question": "Outside of livestock, what else was considered a major industry in the agriculture regions?",
+    "ground_truth": "citrus",
+    "prediction": "The region was a leader in the housing bubbl",
+    "f1": 0.0
+  },
+  {
+    "question": "What industry has managed to survive major military spending cutbacks?",
+    "ground_truth": "aerospace",
+    "prediction": "Although military spending cutbacks have had an impact, aerospace continues to be a",
+    "f1": 0.14285714285714288
+  },
+  {
+    "question": "What type of district is southern California home to many of?",
+    "ground_truth": "business",
+    "prediction": "Southern California is home to many major business districts.",
+    "f1": 0.19999999999999998
+  },
+  {
+    "question": "What does CBD stand for?",
+    "ground_truth": "Central business districts",
+    "prediction": "Central business districts (CBD) include Downtown Los Angeles, Dow",
+    "f1": 0.5
+  },
+  {
+    "question": "What is the only district in the CBD to not have \"downtown\" in it's name?",
+    "ground_truth": "South Coast Metro",
+    "prediction": "Downtown San Diego is the central business district of San Diego, though the city is filled with business districts.",
+    "f1": 0.0
+  },
+  {
+    "question": "Downtown Burbank is an example of what kind of district?",
+    "ground_truth": "business",
+    "prediction": "Within the Los Angeles Area are the major business districts of Downtown Burbank, Downtown Santa Monica, Downtown Glendale and D",
+    "f1": 0.09523809523809523
+  },
+  {
+    "question": "Downtown Santa Monica and Downtown Glendale are a part of which area?",
+    "ground_truth": "Los Angeles Area",
+    "prediction": "Within the Los Angeles Area are the major business districts of Downtown Burbank, Downtown Santa Monica, Downtown Glendale and D",
+    "f1": 0.2608695652173913
+  },
+  {
+    "question": "Warner Center is located in which area?",
+    "ground_truth": "San Fernando Valley",
+    "prediction": "uding Century City, Westwood and Warner Center in the San Fernando Valley.",
+    "f1": 0.26666666666666666
+  },
+  {
+    "question": "Century City is an example of a district that belongs to which city?",
+    "ground_truth": "Los Angeles",
+    "prediction": "ipality around that city.",
+    "f1": 0.0
+  },
+  {
+    "question": "The Sand Bernardino - Riverside area maintains what kind of district?",
+    "ground_truth": "business",
+    "prediction": "The San Bernardino-Riverside area maintains the business districts of Downtown San Bernardino, Hospitality Business/Financial Ce",
+    "f1": 0.125
+  },
+  {
+    "question": "Other than San Bernardino, what is the name of the other city that maintains the districts including University Town?",
+    "ground_truth": "Riverside",
+    "prediction": "The San Bernardino-Riverside area maintains the business districts of Downtown San Bernardino, Hospitality Business/Financial Ce",
+    "f1": 0.0
+  },
+  {
+    "question": "Other than Downtown San Bernardino, and University Town, what is the name of another business district in the San Bernardino-Riverside area?",
+    "ground_truth": "Hospitality Business/Financial Centre",
+    "prediction": "ts of Downtown San Bernardino, Hospitality Business/Financial Centre, University Town which are in San Bernardino and Downtown R",
+    "f1": 0.1904761904761905
+  },
+  {
+    "question": "Which county is developing its business center?",
+    "ground_truth": "Orange",
+    "prediction": "Orange County is a rapidly developing business center that includes Downtown Santa Ana, the South Coast Metro and Newport Center",
+    "f1": 0.09523809523809523
+  },
+  {
+    "question": "Where are international corporations headquartered?",
+    "ground_truth": "University of California, Irvine",
+    "prediction": "Spectrum, West Irvine, and international corporations headquartered at the University of California, Irvine.",
+    "f1": 0.3529411764705882
+  },
+  {
+    "question": "Jamboree Business Parks belongs to which business center?",
+    "ground_truth": "West Irvine",
+    "prediction": "es the Irvine Tech Center and Jamboree Business Parks.",
+    "f1": 0.1818181818181818
+  },
+  {
+    "question": "What other business district does Orange County envelop outside of Downtown Santa Ana and Newport Center?",
+    "ground_truth": "South Coast Metro",
+    "prediction": "Orange County is a rapidly developing business center that includes Downtown Santa Ana, the South Coast Metro and Newport Center",
+    "f1": 0.2608695652173913
+  },
+  {
+    "question": "At what rate is Orange County developing its business centers?",
+    "ground_truth": "rapidly",
+    "prediction": "Orange County is a rapidly developing business center that includes Downtown Santa Ana, the South Coast Metro and Newport Center",
+    "f1": 0.09523809523809523
+  },
+  {
+    "question": "What is the central business district of San Diego?",
+    "ground_truth": "Downtown San Diego",
+    "prediction": "Downtown San Diego is the central business district of San Diego, though the city is filled with business districts.",
+    "f1": 0.2727272727272727
+  },
+  {
+    "question": "Other than its main central  business district, where are the majority of San Diego's business districts located?",
+    "ground_truth": "Northern San Diego",
+    "prediction": "Downtown San Diego is the central business district of San Diego, though the city is filled with business districts.",
+    "f1": 0.18181818181818182
+  },
+  {
+    "question": "Outside of Northern San Diego, which other region contains business districts?",
+    "ground_truth": "North County",
+    "prediction": "Most of these districts are located in Northern San Diego and some within North County r",
+    "f1": 0.2222222222222222
+  },
+  {
+    "question": "University City is an example of a business district located in which city?",
+    "ground_truth": "San Diego",
+    "prediction": ", though the city is filled with business districts.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the second busiest airport in the United States?",
+    "ground_truth": "Los Angeles International Airport",
+    "prediction": "Southern California is home to Los Angeles International Airport, the second-busiest airport in the United States by passenger v",
+    "f1": 0.34782608695652173
+  },
+  {
+    "question": "What is the metric they use to determine how busy airports are?",
+    "ground_truth": "passenger volume",
+    "prediction": "olume (see World's busiest airports by passenger traffic) and the third by international passenger volume (see Busiest airports",
+    "f1": 0.19999999999999998
+  },
+  {
+    "question": "What ranking in terms of busiest airports from international passenger volume is the Los Angeles International Airport?",
+    "ground_truth": "third",
+    "prediction": "Southern California is home to Los Angeles International Airport, the second-busiest airport in the United States by passenger v",
+    "f1": 0.0
+  },
+  {
+    "question": "Which airport is home to the busiest single runway in the world?",
+    "ground_truth": "San Diego International Airport",
+    "prediction": "ego International Airport the busiest single runway airport in the world; Van Nuys Airport, the world's busiest general aviation",
+    "f1": 0.17391304347826086
+  },
+  {
+    "question": "What is the world's busiest general aviation airport?",
+    "ground_truth": "Van Nuys Airport",
+    "prediction": "he world; Van Nuys Airport, the world's busiest general aviation airport; major commercial airports at Orange County, Bakersfiel",
+    "f1": 0.1904761904761905
+  },
+  {
+    "question": "What is the name of the commuter rail system?",
+    "ground_truth": "Metrolink",
+    "prediction": "Six of the seven lines of the commuter rail system, Metrolink, run out of Downtown Los Angeles, connecting Los Angeles, Ventura,",
+    "f1": 0.0
+  },
+  {
+    "question": "How many lines does the commuter rail system have?",
+    "ground_truth": "seven",
+    "prediction": "Six of the seven lines of the commuter rail system, Metrolink, run out of Downtown Los Angeles, connecting Los Angeles, Ventura,",
+    "f1": 0.0909090909090909
+  },
+  {
+    "question": "How many lines run out of Downtown Los Angeles?",
+    "ground_truth": "Six",
+    "prediction": "Six of the seven lines of the commuter rail system, Metrolink, run out of Downtown Los Angeles, connecting Los Angeles, Ventura,",
+    "f1": 0.0909090909090909
+  },
+  {
+    "question": "A single line connects San Bernardino, Riverside and what other county?",
+    "ground_truth": "Orange",
+    "prediction": "the other line connecting San Bernardino, Riverside, and Orange counties directly.",
+    "f1": 0.16666666666666669
+  },
+  {
+    "question": "What is the United States busiest commercial port?",
+    "ground_truth": "Port of Los Angeles",
+    "prediction": "Southern California is also home to the Port of Los Angeles, the United States' busiest commercial port; the adjacent Port of Lo",
+    "f1": 0.23076923076923075
+  },
+  {
+    "question": "What is the second busiest container port in the United States?",
+    "ground_truth": "Port of San Diego",
+    "prediction": "ng Beach, the United States' second busiest container port; and the Port of San Diego.",
+    "f1": 0.31578947368421056
+  },
+  {
+    "question": "The Port of Long Beach belongs to which region of California?",
+    "ground_truth": "Southern",
+    "prediction": "the Port of San Diego.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the moniker that is being used to describe the region's diversified technology?",
+    "ground_truth": "The Tech Coast",
+    "prediction": "The Tech Coast is a moniker that has gained use as a descriptor for the region's diversified technology and industrial base as w",
+    "f1": 0.23076923076923078
+  },
+  {
+    "question": "What kind of universities is the region famous for?",
+    "ground_truth": "research",
+    "prediction": "for the region's diversified technology and industrial base as well as its multitude of prestigious and world-renowned research",
+    "f1": 0.10526315789473684
+  },
+  {
+    "question": "What kind of university is the California Institute of Technology?",
+    "ground_truth": "private",
+    "prediction": "nd private institutions such as the California Institute of Technology, Chapman University, the Claremont Colleges (Claremont Mc",
+    "f1": 0.1111111111111111
+  },
+  {
+    "question": "How many campuses does the University of California have?",
+    "ground_truth": "5",
+    "prediction": "Amongst these include 5 University of California campuses (Irvine, Los A",
+    "f1": 0.16666666666666669
+  },
+  {
+    "question": "How many campuses does the California State University have?",
+    "ground_truth": "12",
+    "prediction": "ngeles, Riverside, Santa Barbara, and San Diego); 12 California State University campuses (Bakersfield, Channel Islands, Domingu",
+    "f1": 0.11764705882352941
+  },
+  {
+    "question": "The Los Angeles Rams are an example of what kind of sports team?",
+    "ground_truth": "NFL",
+    "prediction": "Professional sports teams in Southern California include teams from the NFL (Los Angeles Rams, San Diego Chargers); NBA (Los Ang",
+    "f1": 0.09523809523809523
+  },
+  {
+    "question": "The Los Angeles Clippers are a team belonging to which sport?",
+    "ground_truth": "NBA",
+    "prediction": "rom the NFL (Los Angeles Rams, San Diego Chargers); NBA (Los Angeles Lakers, Los Angeles Clippers); MLB (Los Angeles Dodgers, Lo",
+    "f1": 0.0909090909090909
+  },
+  {
+    "question": "The Los Angeles Angels of Anaheim are from which sport?",
+    "ground_truth": "MLB",
+    "prediction": "s Angeles Angels of Anaheim, San Diego Padres); NHL (Los Angeles Kings, Anaheim Ducks); and MLS (LA Galaxy).",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the other NHL team aside from the Anaheim Ducks to reside in Southern California?",
+    "ground_truth": "Los Angeles Kings",
+    "prediction": "Professional sports teams in Southern California include teams from the NFL (Los Angeles Rams, San Diego Chargers); NBA (Los Ang",
+    "f1": 0.08695652173913045
+  },
+  {
+    "question": "What is the lone MLS team that belongs to southern California?",
+    "ground_truth": "LA Galaxy",
+    "prediction": "uspended following the 2014 MLS season, with a second MLS team scheduled to return in 2018.",
+    "f1": 0.0
+  },
+  {
+    "question": "Which team was suspended from the MLS?",
+    "ground_truth": "Chivas USA",
+    "prediction": "However, Chivas were suspended following the 2014 MLS season, with a second MLS team s",
+    "f1": 0.11764705882352941
+  },
+  {
+    "question": "How many teams did Los Angeles used to have?",
+    "ground_truth": "two",
+    "prediction": "From 2005 to 2014, there were two Major League Soccer teams in Los Angeles \u2014 the LA Galaxy and Chivas USA \u2014 that both played at",
+    "f1": 0.07407407407407407
+  },
+  {
+    "question": "Which year resulted in the suspension of one of the two soccer teams?",
+    "ground_truth": "2014",
+    "prediction": "From 2005 to 2014, there were two Major League Soccer teams in Los Angeles \u2014 the LA Galaxy and Chivas USA \u2014 that both played at",
+    "f1": 0.0
+  },
+  {
+    "question": "What was the name of the stadium that the teams played in?",
+    "ground_truth": "StubHub Center",
+    "prediction": "os Angeles \u2014 the LA Galaxy and Chivas USA \u2014 that both played at the StubHub Center and were local rivals.",
+    "f1": 0.17391304347826084
+  },
+  {
+    "question": "When is the suspended team scheduled to return?",
+    "ground_truth": "2018",
+    "prediction": "uspended following the 2014 MLS season, with a second MLS team scheduled to return in 2018.",
+    "f1": 0.0
+  },
+  {
+    "question": "What other kind of sport is popular in southern California?",
+    "ground_truth": "College",
+    "prediction": "College sports are also popular in southern California.",
+    "f1": 0.2222222222222222
+  },
+  {
+    "question": "The Bruins belong to which college?",
+    "ground_truth": "UCLA",
+    "prediction": "t University, Occidental College, Pepperdine University, University of Redlands, University of San Diego, and the University of",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the name of the team from USC?",
+    "ground_truth": "Trojans",
+    "prediction": "ity of Redlands, University of San Diego, and the University of Southern California.",
+    "f1": 0.0
+  },
+  {
+    "question": "Which conference do the teams in southern California play in?",
+    "ground_truth": "Pac-12",
+    "prediction": "College sports are also popular in southern California.",
+    "f1": 0.0
+  },
+  {
+    "question": "The two listed teams play for which NCAA group?",
+    "ground_truth": "Division I",
+    "prediction": "The UCLA Bruins and the USC Trojans both field teams in NCAA Division I",
+    "f1": 0.25
+  },
+  {
+    "question": "What is a growing sport in southern California?",
+    "ground_truth": "Rugby",
+    "prediction": "Rugby is also a growing sport in southern California, particularly at the high school level, with increasing numbers of schools",
+    "f1": 0.09523809523809523
+  },
+  {
+    "question": "At which level of education is this sport becoming more popular?",
+    "ground_truth": "high school",
+    "prediction": "Rugby is also a growing sport in southern California, particularly at the high school level, with increasing numbers of schools",
+    "f1": 0.18181818181818182
+  },
+  {
+    "question": "What is rugby rapidly becoming with high schools?",
+    "ground_truth": "an official school sport",
+    "prediction": "Rugby is also a growing sport in southern California, particularly at the high school level, with increasing numbers of schools",
+    "f1": 0.16666666666666669
+  },
+  {
+    "question": "What company was formed by the merger of Sky Television and British Satellite Broadcasting?",
+    "ground_truth": "BSkyB",
+    "prediction": "Formed in November 1990 by the equal merger of Sky Television and British Satellite Broadcasting, BSkyB became the UK's largest",
+    "f1": 0.09523809523809523
+  },
+  {
+    "question": "Who is the UK's largest digital subscription television company?",
+    "ground_truth": "BSkyB",
+    "prediction": "d British Satellite Broadcasting, BSkyB became the UK's largest digital subscription television company.",
+    "f1": 0.14285714285714288
+  },
+  {
+    "question": "What year did BSkyB acquire Sky Italia?",
+    "ground_truth": "2014",
+    "prediction": "Initially BSkyB provided Sky Travel to the service.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the name of the holding company for BSkyB?",
+    "ground_truth": "Sky plc",
+    "prediction": "d British Satellite Broadcasting, BSkyB became the UK's largest digital subscription television company.",
+    "f1": 0.0
+  },
+  {
+    "question": "What is the name of the United Kingdom operation for BSkyB?",
+    "ground_truth": "Sky UK Limited",
+    "prediction": "While BSkyB had been excluded from being a part of the ONdigital consortium, thereby making them a competitor by default, BSkyB",
+    "f1": 0.0
+  },
+  {
+    "question": "What year was Setanta Sports awarded Primeier Leage rights to broadcast?",
+    "ground_truth": "2006",
+    "prediction": "er Setanta Sports was awarded two of the six Premier League packages that the English FA offered to broadcasters.",
+    "f1": 0.0
+  },
+  {
+    "question": "How many of the six total packages available to broadcasters was Setanta awarded?",
+    "ground_truth": "two",
+    "prediction": "er Setanta Sports was awarded two of the six Premier League packages that the English FA offered to broadcasters.",
+    "f1": 0.1
+  },
+  {
+    "question": "Who purhcased the remaining 4 pacakages available to broadcasters?",
+    "ground_truth": "Sky",
+    "prediction": "er Setanta Sports was awarded two of the six Premier League packages that the English FA offered to broadcasters.",
+    "f1": 0.0
+  },
+  {
+    "question": "How much did Sky bid to win the 4 broadcast pacakges they bought?",
+    "ground_truth": "\u00a31.3bn",
+    "prediction": "In February 2015, Sky bid \u00a34.2bn",
+    "f1": 0.0
+  },
+  {
+    "question": "What consortium was BSkyB excluded from?",
+    "ground_truth": "ONdigital",
+    "prediction": "While BSkyB had been excluded from being a part of the ONdigital consortium, thereby making them a competitor by default, BSkyB",
+    "f1": 0.0909090909090909
+  },
+  {
+    "question": "Who did BSkyB team up with because it was not part of the consortium?",
+    "ground_truth": "Freeview",
+    "prediction": "While BSkyB had been excluded from being a part of the ONdigital consortium, thereby making them a competitor by default, BSkyB",
+    "f1": 0.0
+  },
+  {
+    "question": "How many BSkyB channels were available to customers prior to October 2005?",
+    "ground_truth": "three",
+    "prediction": "Prior to October 2005, three BSkyB channels were available on this platform: Sky News, Sky Three, an",
+    "f1": 0.1111111111111111
+  },
+  {
+    "question": "What channel replaced Sky Travel?",
+    "ground_truth": "Sky Three",
+    "prediction": "Initially BSkyB provided Sky Travel to the service.",
+    "f1": 0.2
+  },
+  {
+    "question": "What was Sky Travel later rebranded as?",
+    "ground_truth": "Pick TV",
+    "prediction": "roadcasting Limited to Sky UK Limited, still trading as Sky.",
+    "f1": 0.0
+  },
+  {
+    "question": "What service did BSkyB chare additional subscription fees for?",
+    "ground_truth": "Sky+ PVR",
+    "prediction": "BSkyB initially charged additional subscription fees for using a Sky+ PVR with their service; waiving the charge for subscribers",
+    "f1": 0.1904761904761905
+  },
+  {
+    "question": "When did Sky launch a TV advertising campaign target towards women?",
+    "ground_truth": "September 2007",
+    "prediction": "new TV advertising campaign targeting Sky+ at women.",
+    "f1": 0.0
+  },
+  {
+    "question": "WHat allows customers to get Sky+ functions if they do not subscribe to BSkyB's channels?",
+    "ground_truth": "monthly fee",
+    "prediction": "Customers that do not subscribe to BSkyB's channels can still pay a monthly fee to enable Sky+ functions.",
+    "f1": 0.19999999999999998
+  },
+  {
+    "question": "When did BSkyB discontinue the Sky+ Box?",
+    "ground_truth": "January 2010",
+    "prediction": "In January 2010 BSkyB discontinued the Sky+ Box, limited the standard S",
+    "f1": 0.2857142857142857
+  },
+  {
+    "question": "What replaced the Sky+Box?",
+    "ground_truth": "Sky+HD Box",
+    "prediction": "Box as standard, thus giving all new subscribers the functions of Sky+.",
+    "f1": 0.14285714285714285
+  },
+  {
+    "question": "What is the name of the TV scrambling system BSkyB uses?",
+    "ground_truth": "VideoGuard",
+    "prediction": "BSkyB utilises the VideoGuard pay-TV scrambling system owned by NDS, a Cisco Systems company.",
+    "f1": 0.13333333333333333
+  },
+  {
+    "question": "Who is VideoGuard owned by?",
+    "ground_truth": "NDS",
+    "prediction": "BSkyB utilises the VideoGuard pay-TV scrambling system owned by NDS, a Cisco Systems company.",
+    "f1": 0.0
+  },
+  {
+    "question": "Who is the parent company of NDS?",
+    "ground_truth": "Cisco Systems",
+    "prediction": "NDS, a Cisco Systems company.",
+    "f1": 0.5714285714285715
+  },
+  {
+    "question": "Who has design authority over all of the digital satellite receivers that are capable of using their service?",
+    "ground_truth": "BSkyB",
+    "prediction": "BSkyB has design authority over all digital satellite receivers capable of receiving their",
+    "f1": 0.14285714285714288
+  },
+  {
+    "question": "What is the name brand of the personal video recorder that BSkyB offers?",
+    "ground_truth": "Sky+",
+    "prediction": "BSkyB has design authority over all digital satellite receivers capable of receiving their",
+    "f1": 0.0
+  },
+  {
+    "question": "What year did BSkyB and Virgin Media have a dispute over the carriage of Sky Channels on cable TV?",
+    "ground_truth": "2007",
+    "prediction": "In 2007, BSkyB and Virgin Media became involved in a dispute over the carriage of Sky channels on cable TV.",
+    "f1": 0.0
+  },
+  {
+    "question": "What channels were removed from the network in March of 2007?",
+    "ground_truth": "basic channels",
+    "prediction": "st resulted in Virgin Media removing the basic channels from the network on 1 March 2007.",
+    "f1": 0.2222222222222222
+  },
+  {
+    "question": "What did Virgin Media claim BSkyB did that resulted Virgin not carrying the channels anymore?",
+    "ground_truth": "substantially increased the asking price",
+    "prediction": "Virgin Media claimed that BSkyB had substantially increased the asking price for the channels, a claim",
+    "f1": 0.47619047619047616
+  }
+]

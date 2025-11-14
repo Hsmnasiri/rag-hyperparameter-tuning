@@ -1,0 +1,18 @@
+{
+  "Hill Climbing": {
+    "best_run": 4,
+    "chunk_size": 128,
+    "top_k": 5,
+    "best_score": 0.0921371892712033,
+    "recomputed_score": 0.0921371892712033,
+    "num_questions": 500
+  },
+  "Random Search": {
+    "best_run": 1,
+    "chunk_size": 128,
+    "top_k": 9,
+    "best_score": 0.09355717002758045,
+    "recomputed_score": 0.09355717002758045,
+    "num_questions": 500
+  }
+}

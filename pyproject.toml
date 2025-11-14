@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "rag-hyperparameter-tuning"
+version = "0.1.0"
+description = "A comparative study of foundational search algorithms for RAG hyperparameter tuning."
+authors = ["Taha El Mouatadir", "Hesam Nasiri"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.26.4"
+scikit-learn = "^1.4.2"
+matplotlib = "^3.9.2"
+pandas = "^2.2.3"
+sentence-transformers = "^3.2.1"
+transformers = "^4.57.1"
+torch = "^2.8.0"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

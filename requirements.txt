@@ -1,0 +1,11 @@
+# Core runtime dependencies
+numpy==1.26.4
+scikit-learn==1.4.2
+matplotlib==3.9.2
+pandas==2.2.3
+sentence-transformers==3.2.1
+transformers==4.57.1
+torch==2.8.0
+
+# Tooling and tests
+pytest==8.4.2
