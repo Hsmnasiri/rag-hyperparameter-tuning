@@ -13,6 +13,7 @@ import pandas as pd
 
 from src.algorithms.hill_climbing import hill_climbing
 from src.algorithms.random_search import random_search
+from src.algorithms.simulated_annealing import simulated_annealing
 from src.rag.evaluator import evaluate_rag_pipeline, evaluate_rag_with_details
 
 
@@ -46,6 +47,7 @@ EVALUATOR = partial(
 ALGORITHMS = {
     "Random Search": random_search,
     "Hill Climbing": hill_climbing,
+    "Simulated Annealing": simulated_annealing,
 }
 
 
