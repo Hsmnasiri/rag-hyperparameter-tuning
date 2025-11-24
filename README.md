@@ -20,7 +20,7 @@ The current implementation automatically downloads the full SQuAD v2.0 dev set (
 
 - **RAG pipeline:** `src/rag/pipeline.py` exposes a modular pipeline with either TF‑IDF or dense (SentenceTransformer) retrieval plus a configurable generation stage. The default generator is a seq2seq LLM (`google/flan-t5-base`) that conditions on the retrieved context; a lightweight extractive generator is still available for quick smoke tests.
 - **Evaluator:** Automatically downloads SQuAD dev-v2.0 if needed, loads up to `RAG_DATASET_SIZE` QA pairs (default 500) for building the knowledge base, and uses a smaller evaluation slice (`RAG_EVAL_SAMPLE_SIZE`, default 80) for fast search iterations. Full-dataset evaluations are produced when exporting detailed predictions.
-- **Search algorithms:** Random Search and Hill Climbing both interact with the shared evaluator, so they benefit from the same retriever/generator choices and dataset budget.
+- **Search algorithms:** Random Search, Hill Climbing, and Simulated Annealing all interact with the shared evaluator, so they benefit from the same retriever/generator choices and dataset budget.
 - **Experiment runner:** `src/main.py` executes repeated trials of each algorithm, logs per-run metrics to `results/experiment_results.csv`, exports per-question predictions (`results/<algorithm>_predictions.json`), and renders publication-ready plots in `results/plots/`.
 
 ## Installation
