@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import os
 import random
+import time
 from functools import partial
 from pathlib import Path
 from typing import Callable, Dict, List
@@ -176,7 +177,8 @@ def export_predictions(df: pd.DataFrame) -> None:
 
 
 def main():
-    print("Starting RAG hyperparameter search experiments...\n")
+    print("Starting RAG hyperparameter search experiments...")
+    start_time = time.time()
     all_records: List[Dict[str, object]] = []
     for algorithm_name, algorithm_fn in ALGORITHMS.items():
         records = run_experiment(algorithm_name, algorithm_fn)
@@ -185,7 +187,13 @@ def main():
     df = save_results_dataframe(all_records)
     plot_distributions(df)
     export_predictions(df)
-    print("\nExperiments complete.")
+    elapsed = time.time() - start_time
+    minutes, secs = divmod(int(elapsed), 60)
+    hours, minutes = divmod(minutes, 60)
+    formatted = (
+        f"{hours}h {minutes}m {secs}s" if hours else f"{minutes}m {secs}s" if minutes else f"{secs}s"
+    )
+    print(f"\nExperiments complete. Elapsed: {formatted}.")
 
 
 if __name__ == "__main__":

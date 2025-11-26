@@ -2,11 +2,14 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import urllib.request
 from functools import lru_cache
 from itertools import islice
 from pathlib import Path
 from typing import Dict, Iterable, List, Sequence, Tuple
+
+import numpy as np
 
 from .pipeline import RAGPipeline, create_rag_pipeline
 
@@ -39,6 +42,7 @@ DEFAULT_GENERATOR_MODEL = os.environ.get(
 DEFAULT_MAX_NEW_TOKENS = int(os.environ.get("RAG_GENERATOR_MAX_NEW_TOKENS", "64"))
 DEFAULT_TEMPERATURE = float(os.environ.get("RAG_GENERATOR_TEMPERATURE", "0.0"))
 DEFAULT_MAX_CONTEXT_CHARS = int(os.environ.get("RAG_MAX_CONTEXT_CHARS", "4096"))
+TOKEN_PATTERN = re.compile(r"\b\w+\b")
 
 
 def _download_squad(target_path: Path) -> None:
@@ -62,6 +66,15 @@ def _resolve_dataset_path() -> Path:
 
 
 ACTIVE_DATA_PATH = _resolve_dataset_path()
+
+
+def _tokenize(text: str) -> List[str]:
+    return TOKEN_PATTERN.findall(text.lower())
+
+
+def _normalize_for_embedding(text: str) -> str:
+    tokens = _tokenize(text)
+    return " ".join(tokens)
 
 
 def _iter_dataset_entries(path: Path) -> Iterable[Dict[str, str]]:
@@ -89,8 +102,8 @@ def _build_dataset(path: Path, max_items: int) -> List[Dict[str, str]]:
 
 
 def _lexical_f1(prediction: str, ground_truth: str) -> float:
-    pred_tokens = prediction.lower().split()
-    truth_tokens = ground_truth.lower().split()
+    pred_tokens = _tokenize(prediction)
+    truth_tokens = _tokenize(ground_truth)
     if not pred_tokens or not truth_tokens:
         return 0.0
 
@@ -139,26 +152,56 @@ def _get_cached_pipeline(
     )
 
 
+@lru_cache(maxsize=4)
+def _get_similarity_encoder(model_name: str):
+    from sentence_transformers import SentenceTransformer
+
+    return SentenceTransformer(model_name)
+
+
+def _embedding_similarity(encoder, prediction: str, ground_truth: str) -> float:
+    clean_pred = _normalize_for_embedding(prediction)
+    clean_truth = _normalize_for_embedding(ground_truth)
+    if not clean_pred or not clean_truth:
+        return 0.0
+
+    embeddings = encoder.encode(
+        [clean_pred, clean_truth],
+        convert_to_numpy=True,
+        normalize_embeddings=True,
+        show_progress_bar=False,
+    )
+    similarity = float(np.dot(embeddings[0], embeddings[1]))
+    # Map cosine [-1,1] to [0,1] for consistency with other scores.
+    return max(0.0, min(1.0, (similarity + 1) / 2))
+
+
 def _evaluate_dataset(
     rag_chain: RAGPipeline,
     dataset: Sequence[Dict[str, str]],
     top_k: int,
+    embedding_model: str,
 ) -> List[Dict[str, object]]:
     details: List[Dict[str, object]] = []
+    encoder = getattr(rag_chain.retriever, "encoder", None) or _get_similarity_encoder(
+        embedding_model
+    )
     for item in dataset:
         prediction, contexts = rag_chain.invoke(
             item["question"],
             top_k=top_k,
             return_contexts=True,
         )
-        f1 = _lexical_f1(prediction, item["answer"])
+        lexical_f1 = _lexical_f1(prediction, item["answer"])
+        embedding_score = _embedding_similarity(encoder, prediction, item["answer"])
         details.append(
             {
                 "question": item["question"],
                 "ground_truth": item["answer"],
                 "prediction": prediction,
                 "retrieved_contexts": contexts,
-                "f1": f1,
+                "lexical_f1": lexical_f1,
+                "embedding_similarity": embedding_score,
             }
         )
     return details
@@ -195,8 +238,8 @@ def evaluate_rag_pipeline(
         context_chars,
     )
     dataset = DATASET_FULL if use_full_dataset else EVAL_DATASET
-    details = _evaluate_dataset(rag_chain, dataset, top_k)
-    return sum(item["f1"] for item in details) / len(details)
+    details = _evaluate_dataset(rag_chain, dataset, top_k, embedding)
+    return sum(item["embedding_similarity"] for item in details) / len(details)
 
 
 def evaluate_rag_with_details(
@@ -230,6 +273,6 @@ def evaluate_rag_with_details(
         context_chars,
     )
     dataset = DATASET_FULL if use_full_dataset else EVAL_DATASET
-    details = _evaluate_dataset(rag_chain, dataset, top_k)
-    mean_score = sum(item["f1"] for item in details) / len(details)
+    details = _evaluate_dataset(rag_chain, dataset, top_k, embedding)
+    mean_score = sum(item["embedding_similarity"] for item in details) / len(details)
     return mean_score, details

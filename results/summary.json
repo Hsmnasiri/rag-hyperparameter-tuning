@@ -1,18 +1,26 @@
 {
   "Hill Climbing": {
-    "best_run": 4,
-    "chunk_size": 128,
-    "top_k": 5,
-    "best_score": 0.0921371892712033,
-    "recomputed_score": 0.0921371892712033,
+    "best_run": 7,
+    "chunk_size": 448,
+    "top_k": 4,
+    "best_score": 0.7886887842230499,
+    "recomputed_score": 0.7788368981899694,
     "num_questions": 500
   },
   "Random Search": {
-    "best_run": 1,
-    "chunk_size": 128,
+    "best_run": 7,
+    "chunk_size": 192,
     "top_k": 9,
-    "best_score": 0.09355717002758045,
-    "recomputed_score": 0.09355717002758045,
+    "best_score": 0.784791536796838,
+    "recomputed_score": 0.7667217850722372,
+    "num_questions": 500
+  },
+  "Simulated Annealing": {
+    "best_run": 7,
+    "chunk_size": 448,
+    "top_k": 4,
+    "best_score": 0.7886887842230499,
+    "recomputed_score": 0.7788368981899694,
     "num_questions": 500
   }
 }
