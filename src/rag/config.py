@@ -69,19 +69,19 @@ class RAGSearchSpace:
     """
     
     # Chunking parameters
-    chunk_sizes: List[int] = field(default_factory=lambda: [128, 192, 256, 320, 384, 448, 512, 640, 768, 896, 1024])
-    chunk_overlaps: List[int] = field(default_factory=lambda: [0, 16, 32, 48, 64, 80])
+    chunk_sizes: List[int] = field(default_factory=lambda: [16, 32, 64, 128, 192, 256, 320, 384, 448, 512, 640, 896, 1024])
+    chunk_overlaps: List[int] = field(default_factory=lambda: [0, 16, 32, 48, 64, 96, 128])
     
     # Retrieval parameters
     top_k_values: List[int] = field(default_factory=lambda: list(range(1, 11)))
-    similarity_thresholds: List[float] = field(default_factory=lambda: [0.2, 0.4, 0.6])
+    similarity_thresholds: List[float] = field(default_factory=lambda: [0.2, 0.4, 0.6, 0.8])
     retrieval_metrics: List[str] = field(default_factory=lambda: ["cosine", "dot"])
     
     # Model selection
     embedding_models: List[str] = field(default_factory=lambda: ["minilm", "mpnet", "bge"])
 
     # Context window
-    context_windows: List[int] = field(default_factory=lambda: [1024, 2048, 3072])
+    context_windows: List[int] = field(default_factory=lambda: [512, 1024, 2048])
     
     def get_param_dict(self) -> Dict[str, List[Any]]:
         """Return search space as dictionary for algorithms."""
@@ -169,9 +169,15 @@ class RAGConfig:
     @classmethod
     def from_dict(cls, d: Dict[str, Any]) -> "RAGConfig":
         """Create from dictionary."""
+        chunk_size = int(d.get("chunk_size", 256))
+        # Default overlap scales with chunk size; clamp to a valid range.
+        default_overlap = min(64, max(0, chunk_size // 4))
+        chunk_overlap = int(d.get("chunk_overlap", default_overlap))
+        if chunk_size > 0:
+            chunk_overlap = max(0, min(chunk_overlap, chunk_size - 1))
         return cls(
-            chunk_size=d.get("chunk_size", 256),
-            chunk_overlap=d.get("chunk_overlap", 64),
+            chunk_size=chunk_size,
+            chunk_overlap=chunk_overlap,
             top_k=d.get("top_k", 5),
             similarity_threshold=d.get("similarity_threshold", 0.2),
             retrieval_metric=d.get("retrieval_metric", "cosine"),
@@ -208,9 +214,10 @@ class ExperimentSettings:
     num_runs: int = 10
     
     # Dataset settings
-    dataset_size: int = 500  # Total QA pairs to load
+    dataset_size: int = 1000  # Total QA pairs to load
     eval_sample_size: int = 100  # QA pairs per fitness evaluation
-    
+    dataset_seed: int = 42  # Deterministic sampling when subsetting
+
     # Algorithm-specific settings
     hill_climbing_restarts: int = 5
     sa_initial_temperature: float = 0.5
@@ -228,6 +235,9 @@ DEFAULT_SEARCH_SPACE = RAGSearchSpace()
 DEFAULT_SETTINGS = ExperimentSettings()
 
 # Simplified search space for faster experiments
+# Note: The CLI runner (`src/main.py`) uses `src/rag/search_space.py` and its
+# `DEFAULT_SEARCH_SPACE` by default. These "FAST_*" presets are provided as
+# optional utilities for quick local experiments and are not automatically used.
 FAST_SEARCH_SPACE = RAGSearchSpace(
     chunk_sizes=[256, 512, 768],
     chunk_overlaps=[0, 48],

@@ -10,6 +10,7 @@ This module implements a complete RAG pipeline with:
 """
 from __future__ import annotations
 
+import os
 import re
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Sequence, Tuple
@@ -21,6 +22,28 @@ from .config import RAGConfig, EMBEDDING_MODELS, GENERATOR_MODELS
 
 TOKEN_PATTERN = re.compile(r"\b\w+\b")
 SENTENCE_SPLIT_PATTERN = re.compile(r"(?<=[.!?])\s+")
+
+def resolve_device(preferred: Optional[str] = None) -> str:
+    """
+    Resolve the compute device for Torch/SentenceTransformers.
+
+    Defaults to the best available device:
+    - CUDA if available
+    - MPS on Apple Silicon if available
+    - CPU otherwise
+    """
+    if preferred is None:
+        preferred = os.environ.get("RAG_DEVICE")
+    if preferred:
+        return preferred
+
+    import torch
+
+    if torch.cuda.is_available():
+        return "cuda"
+    if getattr(torch.backends, "mps", None) and torch.backends.mps.is_available():
+        return "mps"
+    return "cpu"
 
 
 # =============================================================================
@@ -84,6 +107,7 @@ class DenseRetriever:
         chunk_overlap: int,
         embedding_model: str = "minilm",
         retrieval_metric: str = "cosine",
+        device: Optional[str] = None,
     ):
         from sentence_transformers import SentenceTransformer
         
@@ -96,7 +120,7 @@ class DenseRetriever:
         model_name = model_info["name"]
         
         # Load encoder
-        self.encoder = SentenceTransformer(model_name)
+        self.encoder = SentenceTransformer(model_name, device=resolve_device(device))
         
         # Create chunks
         self.chunks: List[str] = []
@@ -189,6 +213,84 @@ class DenseRetriever:
         )
 
 
+class TfidfRetriever:
+    """
+    Lightweight TF-IDF retriever (fast, no neural embeddings).
+
+    Exposes the same `retrieve(...)` interface as `DenseRetriever`.
+    """
+
+    def __init__(
+        self,
+        documents: Sequence[str],
+        chunk_size: int,
+        chunk_overlap: int,
+    ):
+        from sklearn.feature_extraction.text import TfidfVectorizer
+        from sklearn.preprocessing import normalize
+
+        self.chunk_size = chunk_size
+        self.chunk_overlap = chunk_overlap
+        self.retrieval_metric = "cosine"
+
+        # Keep parity with DenseRetriever API
+        self.encoder = None
+
+        self.chunks: List[str] = []
+        for doc in documents:
+            if doc.strip():
+                self.chunks.extend(chunk_text(doc, chunk_size, chunk_overlap))
+
+        self.vectorizer = TfidfVectorizer()
+        if self.chunks:
+            tfidf = self.vectorizer.fit_transform(self.chunks)
+            self.tfidf_matrix = normalize(tfidf)
+        else:
+            self.tfidf_matrix = None
+
+    def retrieve(
+        self,
+        query: str,
+        top_k: int,
+        similarity_threshold: float = 0.0,
+        retrieval_metric: Optional[str] = None,
+    ) -> Tuple[List[str], List[float]]:
+        if not self.chunks or self.tfidf_matrix is None:
+            return [], []
+
+        from sklearn.preprocessing import normalize
+
+        query_vec = self.vectorizer.transform([query])
+        query_vec = normalize(query_vec)
+
+        scores = (self.tfidf_matrix @ query_vec.T).toarray().ravel()
+
+        # Apply threshold
+        if similarity_threshold > 0:
+            valid_mask = scores >= similarity_threshold
+            if not np.any(valid_mask):
+                top_idx = int(np.argmax(scores))
+                return [self.chunks[top_idx]], [float(scores[top_idx])]
+
+            valid_indices = np.where(valid_mask)[0]
+            valid_scores = scores[valid_mask]
+            sorted_order = np.argsort(valid_scores)[::-1][:top_k]
+            selected_indices = valid_indices[sorted_order]
+            selected_scores = valid_scores[sorted_order]
+            return (
+                [self.chunks[int(i)] for i in selected_indices],
+                [float(s) for s in selected_scores],
+            )
+
+        # No threshold - just get top-k
+        k = min(top_k, len(self.chunks))
+        top_indices = np.argsort(scores)[::-1][:k]
+        return (
+            [self.chunks[int(i)] for i in top_indices],
+            [float(scores[int(i)]) for i in top_indices],
+        )
+
+
 # =============================================================================
 # GENERATOR CLASSES
 # =============================================================================
@@ -206,6 +308,7 @@ class LLMGenerator:
         max_new_tokens: int = 64,
         temperature: float = 0.0,
         max_input_length: int = 512,
+        device: Optional[str] = None,
     ):
         from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
         import torch
@@ -213,36 +316,18 @@ class LLMGenerator:
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
         
-        # Use CPU (user doesn't have GPU)
-        self.device = torch.device("cpu")
+        self.device = torch.device(resolve_device(device))
         self.model.to(self.device)
         self.model.eval()
         
         self.max_new_tokens = max_new_tokens
         self.temperature = max(0.0, temperature)
         self.max_input_length = max_input_length
-    
-    def generate(self, question: str, contexts: List[str]) -> str:
-        """
-        Generate an answer using the LLM.
-        
-        Args:
-            question: The question to answer
-            contexts: Retrieved context chunks
-        
-        Returns:
-            Generated answer string
-        """
+
+    def generate_prompt(self, prompt: str) -> str:
+        """Generate output for an already-built prompt."""
         import torch
-        
-        if not contexts:
-            return ""
-        
-        # Build prompt
-        context_text = "\n\n".join(contexts[:5])  # Limit contexts
-        prompt = f"Answer the question based on the context.\n\nContext: {context_text}\n\nQuestion: {question}\n\nAnswer:"
-        
-        # Tokenize
+
         inputs = self.tokenizer(
             prompt,
             return_tensors="pt",
@@ -250,8 +335,7 @@ class LLMGenerator:
             max_length=self.max_input_length,
         )
         inputs = {k: v.to(self.device) for k, v in inputs.items()}
-        
-        # Generate
+
         with torch.no_grad():
             if self.temperature > 0:
                 outputs = self.model.generate(
@@ -268,9 +352,43 @@ class LLMGenerator:
                     num_beams=4,
                     early_stopping=True,
                 )
-        
+
         answer = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
         return answer.strip()
+
+    def build_rag_prompt(self, question: str, contexts: List[str], *, max_contexts: int = 5) -> str:
+        """Build the standard RAG prompt used by `generate(...)`."""
+        context_text = "\n\n".join(contexts[:max_contexts])
+        return (
+            "Answer the question based on the context.\n\n"
+            f"Context: {context_text}\n\n"
+            f"Question: {question}\n\n"
+            "Answer:"
+        )
+
+    def generate_with_prompt(self, question: str, contexts: List[str]) -> Tuple[str, str]:
+        """Generate an answer and also return the prompt used."""
+        prompt = self.build_rag_prompt(question, contexts)
+        return self.generate_prompt(prompt), prompt
+
+    def generate(self, question: str, contexts: List[str]) -> str:
+        """
+        Generate an answer using the LLM.
+        
+        Args:
+            question: The question to answer
+            contexts: Retrieved context chunks
+        
+        Returns:
+            Generated answer string
+        """
+        import torch
+        
+        if not contexts:
+            return ""
+        
+        answer, _prompt = self.generate_with_prompt(question, contexts)
+        return answer
 
 
 class ExtractiveQA:
@@ -384,6 +502,7 @@ class RAGPipeline:
         top_k: int,
         similarity_threshold: float = 0.0,
         return_details: bool = False,
+        return_prompt: bool = False,
     ):
         """
         Run the RAG pipeline.
@@ -399,7 +518,11 @@ class RAGPipeline:
         """
         question = question.strip()
         if not question:
-            return ("", [], []) if return_details else ""
+            if return_details:
+                if return_prompt:
+                    return ("", [], [], None)
+                return ("", [], [])
+            return ""
         
         # Retrieve
         contexts, scores = self.retriever.retrieve(
@@ -407,18 +530,28 @@ class RAGPipeline:
         )
         
         if not contexts:
-            return ("", [], []) if return_details else ""
+            if return_details:
+                if return_prompt:
+                    return ("", [], [], None)
+                return ("", [], [])
+            return ""
         
         # Truncate
         contexts = self._truncate_contexts(contexts)
         
         # Generate answer
+        prompt: Optional[str] = None
         if self.use_llm and self.llm_generator is not None:
-            answer = self.llm_generator.generate(question, contexts)
+            if return_prompt:
+                answer, prompt = self.llm_generator.generate_with_prompt(question, contexts)
+            else:
+                answer = self.llm_generator.generate(question, contexts)
         else:
             answer = self.extractive_qa.extract(question, contexts)
         
         if return_details:
+            if return_prompt:
+                return answer, contexts, scores, prompt
             return answer, contexts, scores
         return answer
 
@@ -453,14 +586,22 @@ def create_rag_pipeline(
     generator_type = legacy_kwargs.get("generator_type")
     if generator_type and generator_type.lower() == "extractive":
         use_llm = False
-    # Create retriever
-    retriever = DenseRetriever(
-        documents=documents,
-        chunk_size=config.chunk_size,
-        chunk_overlap=config.chunk_overlap,
-        embedding_model=config.embedding_model,
-        retrieval_metric=config.retrieval_metric,
-    )
+
+    retriever_type = str(legacy_kwargs.get("retriever_type", "dense")).lower()
+    if retriever_type == "tfidf":
+        retriever = TfidfRetriever(
+            documents=documents,
+            chunk_size=config.chunk_size,
+            chunk_overlap=config.chunk_overlap,
+        )
+    else:
+        retriever = DenseRetriever(
+            documents=documents,
+            chunk_size=config.chunk_size,
+            chunk_overlap=config.chunk_overlap,
+            embedding_model=config.embedding_model,
+            retrieval_metric=config.retrieval_metric,
+        )
     
     # Create or reuse LLM generator
     if use_llm:
@@ -504,25 +645,5 @@ class NoRAGBaseline:
     
     def answer(self, question: str) -> str:
         """Answer question without any context (pure LLM)."""
-        from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
-        import torch
-        
         prompt = f"Answer the following question:\n\nQuestion: {question}\n\nAnswer:"
-        
-        inputs = self.generator.tokenizer(
-            prompt,
-            return_tensors="pt",
-            truncation=True,
-            max_length=256,
-        )
-        inputs = {k: v.to(self.generator.device) for k, v in inputs.items()}
-        
-        with torch.no_grad():
-            outputs = self.generator.model.generate(
-                **inputs,
-                max_new_tokens=64,
-                num_beams=4,
-                early_stopping=True,
-            )
-        
-        return self.generator.tokenizer.decode(outputs[0], skip_special_tokens=True).strip()
+        return self.generator.generate_prompt(prompt)

@@ -1,0 +1,8 @@
+{
+  "updated_at": "2025-12-18T17:26:50.684174+00:00",
+  "status": "baseline_complete",
+  "baselines": {
+    "no_rag_llm_mean_fitness": 0.24471328629273278,
+    "no_rag_llm_time_seconds": 455.22375106811523
+  }
+}
