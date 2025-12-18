@@ -208,14 +208,14 @@ class ExperimentSettings:
     Reference: Barker et al. (2025) uses 50 total iterations for RAG HPO.
     """
     # Evaluation budget per algorithm run
-    max_evaluations: int = 50
+    max_evaluations: int = 5
     
     # Number of independent runs for statistical significance
-    num_runs: int = 10
+    num_runs: int = 5
     
     # Dataset settings
-    dataset_size: int = 1000  # Total QA pairs to load
-    eval_sample_size: int = 100  # QA pairs per fitness evaluation
+    dataset_size: int = 1500  # Total QA pairs to load
+    eval_sample_size: int = 50  # QA pairs per fitness evaluation
     dataset_seed: int = 42  # Deterministic sampling when subsetting
 
     # Algorithm-specific settings
@@ -225,7 +225,7 @@ class ExperimentSettings:
     sa_min_temperature: float = 0.001
     
     # Parallel processing
-    num_workers: int = 4
+    num_workers: int = 8
 
 
 # =============================================================================

@@ -1,0 +1,7 @@
+{
+  "updated_at": "2025-12-18T19:17:32.623579+00:00",
+  "status": "baseline_no_rag",
+  "baseline": "no_rag_llm",
+  "baseline_item": 20,
+  "baseline_total": 50
+}

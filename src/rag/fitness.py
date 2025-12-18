@@ -210,8 +210,8 @@ def compute_fitness(
     
     # Combined fitness with specified weights
     fitness = (
-        0.5 * best_f1 +
-        0.3 * semantic_sim +
+        0.3 * best_f1 +
+        0.5 * semantic_sim +
         0.1 * best_exact +
         0.1 * best_substring
     )

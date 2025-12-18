@@ -363,6 +363,13 @@ class RAGEvaluator:
         self.enable_semantic_similarity = enable_semantic_similarity
         self.num_workers = settings.num_workers
         self.device = resolve_device(device)
+        try:
+            import torch
+
+            if self.device == "cpu" and getattr(torch.backends, "mps", None) and torch.backends.mps.is_available():
+                print("Note: MPS is available but CPU is selected. Set RAG_DEVICE=mps to use Apple Silicon acceleration.")
+        except Exception:
+            pass
         self.generator_model = generator_model
         self.generator_max_new_tokens = generator_max_new_tokens
         self.generator_temperature = generator_temperature
@@ -374,6 +381,7 @@ class RAGEvaluator:
         self.trace_max_context_chars = max(0, _env_int("RAG_TRACE_MAX_CONTEXT_CHARS", 300))
         self.trace_max_prompt_chars = max(0, _env_int("RAG_TRACE_MAX_PROMPT_CHARS", 2000))
         self.trace_max_prediction_chars = max(0, _env_int("RAG_TRACE_MAX_PREDICTION_CHARS", 500))
+        self.trace_sample_size = max(0, _env_int("RAG_TRACE_SAMPLE_SIZE", 0))
         results_dir = Path(os.environ.get("RAG_RESULTS_DIR", "results")).expanduser()
         self.trace_path = results_dir / "live" / "qa_traces.jsonl"
         self._trace_lock = Lock()
@@ -441,6 +449,8 @@ class RAGEvaluator:
     def _log_trace(self, record: Dict[str, Any]) -> None:
         if not (self.trace_qa or self.trace_baseline):
             return
+        path_override = record.pop("_trace_file", None)
+        target_path = Path(path_override).expanduser() if path_override else self.trace_path
         try:
             line = json.dumps(record, ensure_ascii=False)
         except TypeError:
@@ -448,7 +458,8 @@ class RAGEvaluator:
             safe = {k: (str(v) if not isinstance(v, (str, int, float, bool, list, dict, type(None))) else v) for k, v in record.items()}
             line = json.dumps(safe, ensure_ascii=False)
         with self._trace_lock:
-            with self.trace_path.open("a", encoding="utf-8") as f:
+            target_path.parent.mkdir(parents=True, exist_ok=True)
+            with target_path.open("a", encoding="utf-8") as f:
                 f.write(line + "\n")
     
     def _get_retriever(
@@ -535,6 +546,10 @@ class RAGEvaluator:
         # Evaluate on sample
         scores = []
         total_items = len(self.eval_dataset)
+        sample_indices = None
+        if self.trace_qa and trace is not None and self.trace_sample_size > 0 and total_items > 0:
+            k = min(self.trace_sample_size, total_items)
+            sample_indices = set(random.sample(range(1, total_items + 1), k=k))
         for idx, item in enumerate(self.eval_dataset, start=1):
             contexts: List[str] = []
             retrieval_scores: List[float] = []
@@ -564,6 +579,10 @@ class RAGEvaluator:
             scores.append(metrics["fitness"])
 
             if self.trace_qa and trace is not None:
+                if sample_indices is not None and idx not in sample_indices:
+                    if progress is not None and (idx == 1 or idx % 10 == 0 or idx == total_items):
+                        progress(idx, total_items)
+                    continue
                 trimmed_contexts = [
                     _truncate_text(c, self.trace_max_context_chars)
                     for c in contexts[: self.trace_max_contexts]
@@ -593,6 +612,7 @@ class RAGEvaluator:
                         "prompt": trimmed_prompt,
                         "prediction": trimmed_pred,
                         **metrics,
+                        "_trace_file": trace.get("trace_file") if isinstance(trace, dict) else None,
                     }
                 )
             if progress is not None and (idx == 1 or idx % 10 == 0 or idx == total_items):

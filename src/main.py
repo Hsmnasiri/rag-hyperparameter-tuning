@@ -55,7 +55,7 @@ def _env_bool(name: str, default: bool = False) -> bool:
     return value.strip().lower() in {"1", "true", "yes", "y", "on"}
 
 
-MAX_EVALUATIONS = max(1, _env_int("RAG_MAX_EVALUATIONS", 50))  # Literature-aligned budget (~50 evaluations)
+MAX_EVALUATIONS = max(1, _env_int("RAG_MAX_EVALUATIONS", 30))  # Literature-aligned budget (~50 evaluations)
 NUM_RUNS = max(1, _env_int("RAG_NUM_RUNS", 10))               # Statistical significance
 
 # Output directories
@@ -157,11 +157,22 @@ class LiveLogger:
     def qa_traces_path(self) -> Path:
         return self.live_dir / "qa_traces.jsonl"
 
+    @property
+    def qa_traces_dir(self) -> Path:
+        return self.live_dir / "qa_traces"
+
     def reset(self, *, total_runs: int, max_evaluations: int) -> None:
         self.live_dir.mkdir(parents=True, exist_ok=True)
         self.evals_path.write_text("", encoding="utf-8")
         self.runs_path.write_text("", encoding="utf-8")
         self.qa_traces_path.write_text("", encoding="utf-8")
+        # Clear per-evaluation trace files
+        self.qa_traces_dir.mkdir(parents=True, exist_ok=True)
+        for f in self.qa_traces_dir.glob("*.jsonl"):
+            try:
+                f.unlink()
+            except Exception:
+                pass
         self.results_csv.parent.mkdir(parents=True, exist_ok=True)
         with self.results_csv.open("w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=RUN_COLUMNS)
@@ -274,6 +285,9 @@ def run_single_trial(
                 "algorithm": algorithm_name,
                 "run": run_idx,
                 "evaluation": eval_counter,
+                "trace_file": str(
+                    (live.qa_traces_dir / f"{algorithm_name.replace(' ', '_').lower()}_run{run_idx}_eval{eval_counter}.jsonl").absolute()
+                ),
             },
         )
         elapsed = time.time() - t0

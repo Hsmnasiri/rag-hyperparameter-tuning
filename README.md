@@ -129,6 +129,20 @@ This produces:
 - `results/combined/summary.json`
 - `results/combined/plots/*.png`
 
+### 6) Tracing options (sampling + per-evaluation files)
+
+- `RAG_TRACE_QA=1` to log questions/contexts/prompts/predictions for RAG runs.
+- `RAG_TRACE_BASELINE=1` to log per-question baseline (LLM-only) answers.
+- `RAG_TRACE_SAMPLE_SIZE=<n>` to log only `<n>` questions per evaluation (sampled); `0` logs all.
+- When tracing is enabled, per-evaluation trace files are also written under `results/<dir>/live/qa_traces/algorithm_runX_evalY.jsonl`.
+
+Example (log only 20 questions per evaluation for Hill Climbing):
+```bash
+RAG_TRACE_QA=1 RAG_TRACE_SAMPLE_SIZE=20 \
+RAG_ALGORITHM=hill_climbing RAG_RESULTS_DIR=results/hc_trace_sample \
+.venv/bin/python -m src.main
+```
+
 ### Run Algorithms Separately (3 Commands)
 
 Useful when you want to run each algorithm on a different machine (or in parallel terminal sessions).
@@ -226,7 +240,13 @@ RAG_TRACE_MAX_CONTEXTS=5
 RAG_TRACE_MAX_CONTEXT_CHARS=300
 RAG_TRACE_MAX_PROMPT_CHARS=2000
 RAG_TRACE_MAX_PREDICTION_CHARS=500
+RAG_TRACE_SAMPLE_SIZE=0       # 0 = log all; otherwise log only this many questions per evaluation (sampled)
 ```
+
+### Apple Silicon (M-series) acceleration
+- Set `RAG_DEVICE=mps` to use the MPS backend for both the LLM and embeddings.
+- If you see a message like “MPS is available but CPU is selected,” set `RAG_DEVICE=mps`.
+- Example: `RAG_DEVICE=mps RAG_ALGORITHM=hill_climbing .venv/bin/python -m src.main`
 
 ### Why not use the full dataset by default?
 
