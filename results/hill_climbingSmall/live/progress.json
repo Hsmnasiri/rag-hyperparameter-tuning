@@ -1,19 +1,12 @@
 {
-  "updated_at": "2025-12-18T19:22:02.987493+00:00",
-  "status": "evaluating",
+  "updated_at": "2025-12-18T19:24:18.322845+00:00",
+  "status": "evaluating_items",
   "algorithm": "Hill Climbing",
   "run": 1,
   "evaluation": 8,
+  "evaluation_item": 1,
+  "evaluation_total": 50,
   "max_evaluations": 30,
   "completed_runs": 0,
-  "total_runs": 10,
-  "current_config": {
-    "chunk_size": 512,
-    "chunk_overlap": 80,
-    "top_k": 10,
-    "similarity_threshold": 0.4,
-    "embedding_model": "mpnet",
-    "retrieval_metric": "dot",
-    "max_context_chars": 3072
-  }
+  "total_runs": 10
 }
