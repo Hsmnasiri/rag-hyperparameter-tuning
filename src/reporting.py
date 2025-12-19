@@ -199,6 +199,34 @@ def plot_results(
     plt.close(fig)
     print(f"Saved configuration scatter to {plots_dir / 'configuration_scatter.png'}")
 
+    # 5) Parameter effect bars (mean score by value)
+    params_to_plot = ["chunk_size", "top_k", "similarity_threshold", "retrieval_metric", "max_context_chars"]
+    n_params = len(params_to_plot)
+    for alg, color in zip(algorithms, colors):
+        alg_data = df[df["algorithm"] == alg]
+        if alg_data.empty:
+            continue
+        ncols = 3
+        nrows = int(np.ceil(n_params / ncols))
+        fig, axes = plt.subplots(nrows, ncols, figsize=(5 * ncols, 4 * nrows))
+        axes = axes.flatten()
+        for idx, param in enumerate(params_to_plot):
+            ax = axes[idx]
+            grouped = alg_data.groupby(param)["best_score"].mean().reset_index()
+            grouped = grouped.sort_values("best_score", ascending=False)
+            ax.bar(grouped[param].astype(str), grouped["best_score"], color=color, alpha=0.8, edgecolor="black")
+            ax.set_title(f"{param}", fontsize=11, fontweight="bold")
+            ax.set_ylim(0, 1)
+            ax.tick_params(axis="x", rotation=45)
+        # Hide any unused subplots
+        for ax in axes[n_params:]:
+            ax.set_visible(False)
+        fig.suptitle(f"{alg} — Mean Score by Parameter Value", fontsize=14, fontweight="bold")
+        fig.tight_layout()
+        fig.savefig(plots_dir / f"{alg.lower().replace(' ', '_')}_param_effects.png", dpi=300)
+        plt.close(fig)
+        print(f"Saved parameter effects for {alg} to {plots_dir / f'{alg.lower().replace(\" \", \"_\")}_param_effects.png'}")
+
 
 def export_summary(
     df: pd.DataFrame,
