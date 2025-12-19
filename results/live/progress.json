@@ -1,9 +1,9 @@
 {
-  "updated_at": "2025-12-19T06:18:36.782507+00:00",
+  "updated_at": "2025-12-19T07:52:34.504542+00:00",
   "status": "run_complete",
   "algorithm": "Simulated Annealing",
   "run": 5,
   "completed_runs": 15,
   "total_runs": 15,
-  "last_best_score": 0.7287604044125955
+  "last_best_score": 0.8029191771931242
 }

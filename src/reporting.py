@@ -223,9 +223,10 @@ def plot_results(
             ax.set_visible(False)
         fig.suptitle(f"{alg} — Mean Score by Parameter Value", fontsize=14, fontweight="bold")
         fig.tight_layout()
-        fig.savefig(plots_dir / f"{alg.lower().replace(' ', '_')}_param_effects.png", dpi=300)
+        plot_path = plots_dir / f"{alg.lower().replace(' ', '_')}_param_effects.png"
+        fig.savefig(plot_path, dpi=300)
         plt.close(fig)
-        print(f"Saved parameter effects for {alg} to {plots_dir / f'{alg.lower().replace(\" \", \"_\")}_param_effects.png'}")
+        print(f"Saved parameter effects for {alg} to {plot_path}")
 
 
 def export_summary(

@@ -211,7 +211,7 @@ class ExperimentSettings:
     Reference: Barker et al. (2025) uses 50 total iterations for RAG HPO.
     """
     # Evaluation budget per algorithm run
-    max_evaluations: int = 30
+    max_evaluations: int = 50
     
     # Number of independent runs for statistical significance
     num_runs: int = 5
