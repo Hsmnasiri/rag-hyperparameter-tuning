@@ -69,16 +69,19 @@ class RAGSearchSpace:
     """
     
     # Chunking parameters
-    chunk_sizes: List[int] = field(default_factory=lambda: [16, 32, 64, 128, 192, 256, 320, 384, 448, 512, 640, 896, 1024])
-    chunk_overlaps: List[int] = field(default_factory=lambda: [0, 16, 32, 48, 64, 96, 128])
+    # chunk_sizes: List[int] = field(default_factory=lambda: [16, 32, 64, 128, 192, 256, 320, 384, 448, 512, 640, 896, 1024])
+    chunk_sizes: List[int] = field(default_factory=lambda: [128, 256, 512, 1024])
+
+    chunk_overlaps: List[int] = field(default_factory=lambda: [0, 16, 32, 64,])
     
     # Retrieval parameters
-    top_k_values: List[int] = field(default_factory=lambda: list(range(1, 11)))
+    top_k_values: List[int] = field(default_factory=lambda: list(range(3, 8)))
     similarity_thresholds: List[float] = field(default_factory=lambda: [0.2, 0.4, 0.6, 0.8])
     retrieval_metrics: List[str] = field(default_factory=lambda: ["cosine", "dot"])
     
     # Model selection
-    embedding_models: List[str] = field(default_factory=lambda: ["minilm", "mpnet", "bge"])
+    # embedding_models: List[str] = field(default_factory=lambda: ["minilm", "mpnet", "bge"])
+    embedding_models: List[str] = field(default_factory=lambda: ["minilm"])
 
     # Context window
     context_windows: List[int] = field(default_factory=lambda: [512, 1024, 2048])
@@ -208,20 +211,20 @@ class ExperimentSettings:
     Reference: Barker et al. (2025) uses 50 total iterations for RAG HPO.
     """
     # Evaluation budget per algorithm run
-    max_evaluations: int = 5
+    max_evaluations: int = 30
     
     # Number of independent runs for statistical significance
     num_runs: int = 5
     
     # Dataset settings
-    dataset_size: int = 1500  # Total QA pairs to load
+    dataset_size: int = 500  # Total QA pairs to load
     eval_sample_size: int = 50  # QA pairs per fitness evaluation
-    dataset_seed: int = 42  # Deterministic sampling when subsetting
+    dataset_seed: int = -1  # -1 = draw a random seed each run
 
     # Algorithm-specific settings
     hill_climbing_restarts: int = 5
     sa_initial_temperature: float = 0.5
-    sa_cooling_rate: float = 0.85
+    sa_cooling_rate: float = 0.80
     sa_min_temperature: float = 0.001
     
     # Parallel processing

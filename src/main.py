@@ -29,6 +29,7 @@ from src.algorithms.random_search import random_search
 from src.algorithms.simulated_annealing import simulated_annealing
 from src.rag.evaluator import evaluate_rag_pipeline, get_evaluator
 from src.rag.search_space import DEFAULT_SEARCH_SPACE
+from src.rag.config import DEFAULT_SETTINGS
 from src.reporting import export_summary, plot_results, save_results
 
 
@@ -55,8 +56,8 @@ def _env_bool(name: str, default: bool = False) -> bool:
     return value.strip().lower() in {"1", "true", "yes", "y", "on"}
 
 
-MAX_EVALUATIONS = max(1, _env_int("RAG_MAX_EVALUATIONS", 30))  # Literature-aligned budget (~50 evaluations)
-NUM_RUNS = max(1, _env_int("RAG_NUM_RUNS", 10))               # Statistical significance
+MAX_EVALUATIONS = max(1, _env_int("RAG_MAX_EVALUATIONS", DEFAULT_SETTINGS.max_evaluations))
+NUM_RUNS = max(1, _env_int("RAG_NUM_RUNS", DEFAULT_SETTINGS.num_runs))
 
 # Output directories
 RESULTS_DIR = Path(os.environ.get("RAG_RESULTS_DIR", "results")).expanduser()
@@ -328,6 +329,7 @@ def run_single_trial(
     record = {
         "algorithm": algorithm_name,
         "run": run_idx,
+        "max_evaluations": max_evaluations,
         "best_score": best_score,
         "chunk_size": best_config.get("chunk_size"),
         "chunk_overlap": best_config.get("chunk_overlap"),
@@ -607,7 +609,13 @@ def main():
     skip_summary = _env_bool("RAG_SKIP_SUMMARY", False)
     plots_dir = RESULTS_DIR / "plots"
     if not skip_plots:
-        plot_results(df, plots_dir=plots_dir, algorithms=selected_algorithm_names)
+        evals_path = LIVE_DIR / "evaluations.jsonl"
+        plot_results(
+            df,
+            plots_dir=plots_dir,
+            algorithms=selected_algorithm_names,
+            evaluations_path=evals_path,
+        )
     if not skip_summary:
         export_summary(df, results_dir=RESULTS_DIR, algorithms=selected_algorithm_names, baselines=baselines)
     

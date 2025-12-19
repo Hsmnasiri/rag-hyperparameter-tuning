@@ -390,11 +390,17 @@ class RAGEvaluator:
 
         # Load dataset
         dataset_path = resolve_dataset_path()
+        # Resolve dataset seed (-1 means pick a new random seed each run)
+        seed = settings.dataset_seed
+        if seed is None or seed < 0:
+            seed = random.randint(0, 1_000_000_000)
+            print(f"Using random dataset seed: {seed}")
+
         print(f"Loading dataset from {dataset_path} (size={settings.dataset_size})...")
         self.dataset = load_squad_dataset(
             path=dataset_path,
             max_items=settings.dataset_size,
-            seed=settings.dataset_seed,
+            seed=seed,
         )
         print(f"Loaded {len(self.dataset)} QA pairs")
         
@@ -409,7 +415,7 @@ class RAGEvaluator:
         if self.eval_sample_size >= len(self.dataset):
             self.eval_dataset = list(self.dataset)
         else:
-            rng = random.Random(settings.dataset_seed + 1)
+            rng = random.Random(seed + 1)
             self.eval_dataset = rng.sample(self.dataset, k=self.eval_sample_size)
         print(f"Using {len(self.eval_dataset)} QA pairs per evaluation")
         

@@ -1,0 +1,2 @@
+algorithm,run,best_score,chunk_size,chunk_overlap,top_k,similarity_threshold,retrieval_metric,embedding_model,max_context_chars,time_seconds
+Simulated Annealing,1,0.6716315139812901,640,32,6,0.4,cosine,bge,1024,295.586302280426

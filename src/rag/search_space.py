@@ -23,26 +23,26 @@ class SearchSpace:
     Parameters are chosen based on academic benchmarks and best practices.
     """
     
-    # Chunking parameters
-    chunk_sizes: List[int] = field(default_factory=lambda: [128, 192, 256, 320, 384, 448, 512, 640, 768, 896, 1024])
-    chunk_overlaps: List[int] = field(default_factory=lambda: [0, 16, 32, 48, 64, 80])
+    # Chunking parameters (include tiny/huge to cover bad/good configs)
+    chunk_sizes: List[int] = field(
+        default_factory=lambda: [16, 32, 64, 128, 256, 384, 512, 640, 768, 896, 1024]
+    )
+    chunk_overlaps: List[int] = field(
+        default_factory=lambda: [0, 16, 32, 48, 64, 96, 128]
+    )
     
-    # Retrieval parameters
-    top_k_values: List[int] = field(default_factory=lambda: list(range(1, 11)))
-    similarity_thresholds: List[float] = field(default_factory=lambda: [0.2, 0.4, 0.6])
+    # Retrieval parameters (include weak settings)
+    top_k_values: List[int] = field(default_factory=lambda: [1, 3, 5, 7, 11, 13, 17, 19])
+    similarity_thresholds: List[float] = field(default_factory=lambda: [0.0, 0.2, 0.4, 0.6, 0.8])
     
-    # Embedding models (use short keys matching EMBEDDING_MODELS)
-    embedding_models: List[str] = field(default_factory=lambda: [
-        "minilm",     # Fast, 384 dim, MTEB benchmark
-        "mpnet",      # Better quality, 768 dim
-        "bge",        # Stronger semantic similarity
-    ])
+    # Embedding models (keep lightweight by default)
+    embedding_models: List[str] = field(default_factory=lambda: ["minilm"])
     
     # Retrieval metrics
     retrieval_metrics: List[str] = field(default_factory=lambda: ["cosine", "dot"])
 
     # Context window limits (characters)
-    context_windows: List[int] = field(default_factory=lambda: [1024, 2048, 3072])
+    context_windows: List[int] = field(default_factory=lambda: [256, 512, 1024, 2048])
     
     def get_config_space(self) -> Dict[str, List[Any]]:
         """Return the complete configuration space as a dictionary."""

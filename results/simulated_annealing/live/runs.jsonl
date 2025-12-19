@@ -1,0 +1,1 @@
+{"algorithm": "Simulated Annealing", "run": 1, "best_score": 0.6716315139812901, "chunk_size": 640, "chunk_overlap": 32, "top_k": 6, "similarity_threshold": 0.4, "retrieval_metric": "cosine", "embedding_model": "bge", "max_context_chars": 1024, "time_seconds": 295.586302280426}

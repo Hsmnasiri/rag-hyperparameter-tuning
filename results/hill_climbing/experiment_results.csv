@@ -1,1 +1,2 @@
 algorithm,run,best_score,chunk_size,chunk_overlap,top_k,similarity_threshold,retrieval_metric,embedding_model,max_context_chars,time_seconds
+Hill Climbing,1,0.7297622661258629,320,48,8,0.2,dot,bge,3072,398.6794822216034

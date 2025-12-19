@@ -1,0 +1,22 @@
+{
+  "Hill Climbing": {
+    "mean_score": 0.7297622661258629,
+    "std_score": 0.0,
+    "max_score": 0.7297622661258629,
+    "min_score": 0.7297622661258629,
+    "best_chunk_size": 320,
+    "best_chunk_overlap": 48,
+    "best_top_k": 8,
+    "best_similarity_threshold": 0.2,
+    "best_retrieval_metric": "dot",
+    "best_embedding_model": "bge",
+    "best_max_context_chars": 3072,
+    "best_run": 1,
+    "avg_time_seconds": 398.6794822216034,
+    "total_runs": 1
+  },
+  "_baselines": {
+    "no_rag_llm_mean_fitness": 0.2067268023147163,
+    "no_rag_llm_time_seconds": 4.6714746952056885
+  }
+}

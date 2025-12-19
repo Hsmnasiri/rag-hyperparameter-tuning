@@ -12,6 +12,7 @@ import pandas as pd
 RUN_COLUMNS = [
     "algorithm",
     "run",
+    "max_evaluations",
     "best_score",
     "chunk_size",
     "chunk_overlap",
@@ -36,7 +37,13 @@ def save_results(records: List[Dict], *, results_dir: Path) -> pd.DataFrame:
     return df
 
 
-def plot_results(df: pd.DataFrame, *, plots_dir: Path, algorithms: List[str]) -> None:
+def plot_results(
+    df: pd.DataFrame,
+    *,
+    plots_dir: Path,
+    algorithms: List[str],
+    evaluations_path: Optional[Path] = None,
+) -> None:
     """Generate visualization plots for the provided algorithms."""
     plots_dir.mkdir(parents=True, exist_ok=True)
     if df.empty:
@@ -98,12 +105,12 @@ def plot_results(df: pd.DataFrame, *, plots_dir: Path, algorithms: List[str]) ->
     plt.close(fig)
     print(f"Saved summary bar chart to {plots_dir / 'best_score_summary.png'}")
 
-    # 3) Run-by-run line plot
+    # 3) Score by max_evaluations
     fig, ax = plt.subplots(figsize=(12, 6))
     for alg, color in zip(algorithms, colors):
-        alg_data = df[df["algorithm"] == alg].sort_values("run")
+        alg_data = df[df["algorithm"] == alg].sort_values("max_evaluations")
         ax.plot(
-            alg_data["run"],
+            alg_data["max_evaluations"],
             alg_data["best_score"],
             marker="o",
             label=alg,
@@ -111,18 +118,59 @@ def plot_results(df: pd.DataFrame, *, plots_dir: Path, algorithms: List[str]) ->
             linewidth=2,
             markersize=8,
         )
-    ax.set_xlabel("Run", fontsize=12)
+    ax.set_xlabel("Max Evaluations", fontsize=12)
     ax.set_ylabel("Score", fontsize=12)
-    ax.set_title("Score by Run", fontsize=14, fontweight="bold")
+    ax.set_title("Score by Max Evaluations", fontsize=14, fontweight="bold")
     ax.legend(loc="best")
     ax.set_ylim(0, 1)
-    run_ticks = sorted({int(x) for x in df["run"].tolist() if pd.notna(x)})
-    if run_ticks:
-        ax.set_xticks(run_ticks)
+    max_eval_ticks = sorted({int(x) for x in df["max_evaluations"].tolist() if pd.notna(x)})
+    if max_eval_ticks:
+        ax.set_xticks(max_eval_ticks)
     fig.tight_layout()
-    fig.savefig(plots_dir / "score_by_run.png", dpi=300)
+    fig.savefig(plots_dir / "score_by_max_evaluations.png", dpi=300)
     plt.close(fig)
-    print(f"Saved run plot to {plots_dir / 'score_by_run.png'}")
+    print(f"Saved plot to {plots_dir / 'score_by_max_evaluations.png'}")
+
+    # 4) Score by evaluation per run (raw evaluations.jsonl)
+    if evaluations_path is not None and evaluations_path.exists():
+        try:
+            eval_df = pd.read_json(evaluations_path, lines=True)
+        except Exception as exc:  # pragma: no cover
+            print(f"Could not load evaluations from {evaluations_path}: {exc}")
+            eval_df = None
+
+        if eval_df is not None and {"algorithm", "run", "evaluation", "score"}.issubset(eval_df.columns):
+            fig, axes = plt.subplots(len(algorithms), 1, figsize=(12, 4 * len(algorithms)), sharex=True)
+            if len(algorithms) == 1:
+                axes = [axes]
+
+            for ax, alg, color in zip(axes, algorithms, colors):
+                alg_data = eval_df[eval_df["algorithm"] == alg].copy()
+                if alg_data.empty:
+                    ax.set_title(f"{alg} (no data)")
+                    ax.set_ylabel("Score")
+                    continue
+                for run, run_data in alg_data.groupby("run"):
+                    run_data = run_data.sort_values("evaluation")
+                    ax.plot(
+                        run_data["evaluation"],
+                        run_data["score"],
+                        marker="o",
+                        linestyle="-",
+                        label=f"run {int(run)}",
+                        alpha=0.6,
+                    )
+                ax.set_title(f"{alg} — Score by Evaluation")
+                ax.set_ylabel("Score")
+                ax.set_ylim(0, 1)
+                ax.legend(loc="best")
+            axes[-1].set_xlabel("Evaluation")
+            fig.tight_layout()
+            fig.savefig(plots_dir / "score_by_evaluation.png", dpi=300)
+            plt.close(fig)
+            print(f"Saved plot to {plots_dir / 'score_by_evaluation.png'}")
+        else:
+            print(f"Skipped score-by-evaluation plot; evaluations file missing required columns.")
 
     # 4) Scatter of chunk_size vs top_k
     fig, axes = plt.subplots(1, len(algorithms), figsize=(5 * len(algorithms), 5))
@@ -258,4 +306,3 @@ def export_summary(
                 print(f"  {alg1} vs {alg2}: (scipy not available for statistical test)")
 
     return summary
-

@@ -1,0 +1,54 @@
+{
+  "Random Search": {
+    "mean_score": 0.7123232442190067,
+    "std_score": 0.027728849529366124,
+    "max_score": 0.74835306626737,
+    "min_score": 0.6827280356186343,
+    "best_chunk_size": 512,
+    "best_chunk_overlap": 48,
+    "best_top_k": 13,
+    "best_similarity_threshold": 0.0,
+    "best_retrieval_metric": "cosine",
+    "best_embedding_model": "minilm",
+    "best_max_context_chars": 1024,
+    "best_run": 5,
+    "avg_time_seconds": 134.83624591827393,
+    "total_runs": 5
+  },
+  "Hill Climbing": {
+    "mean_score": 0.6834926312201542,
+    "std_score": 0.03421452761395143,
+    "max_score": 0.7337996219536482,
+    "min_score": 0.6485652551041408,
+    "best_chunk_size": 512,
+    "best_chunk_overlap": 96,
+    "best_top_k": 19,
+    "best_similarity_threshold": 0.4,
+    "best_retrieval_metric": "dot",
+    "best_embedding_model": "minilm",
+    "best_max_context_chars": 512,
+    "best_run": 3,
+    "avg_time_seconds": 151.08775315284728,
+    "total_runs": 5
+  },
+  "Simulated Annealing": {
+    "mean_score": 0.6203603462251615,
+    "std_score": 0.21353342729738772,
+    "max_score": 0.7518865619414039,
+    "min_score": 0.2413529946559242,
+    "best_chunk_size": 512,
+    "best_chunk_overlap": 16,
+    "best_top_k": 7,
+    "best_similarity_threshold": 0.4,
+    "best_retrieval_metric": "dot",
+    "best_embedding_model": "minilm",
+    "best_max_context_chars": 1024,
+    "best_run": 2,
+    "avg_time_seconds": 120.23688859939575,
+    "total_runs": 5
+  },
+  "_baselines": {
+    "no_rag_llm_mean_fitness": 0.24568780270905718,
+    "no_rag_llm_time_seconds": 4.179996013641357
+  }
+}

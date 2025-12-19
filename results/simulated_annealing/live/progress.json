@@ -1,0 +1,19 @@
+{
+  "updated_at": "2025-12-19T01:25:46.945257+00:00",
+  "status": "evaluating",
+  "algorithm": "Simulated Annealing",
+  "run": 2,
+  "evaluation": 12,
+  "max_evaluations": 30,
+  "completed_runs": 1,
+  "total_runs": 10,
+  "current_config": {
+    "chunk_size": 192,
+    "chunk_overlap": 0,
+    "top_k": 9,
+    "similarity_threshold": 0.6,
+    "embedding_model": "bge",
+    "retrieval_metric": "cosine",
+    "max_context_chars": 1024
+  }
+}

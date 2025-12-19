@@ -1,0 +1,1 @@
+{"algorithm": "Hill Climbing", "run": 1, "best_score": 0.7297622661258629, "chunk_size": 320, "chunk_overlap": 48, "top_k": 8, "similarity_threshold": 0.2, "retrieval_metric": "dot", "embedding_model": "bge", "max_context_chars": 3072, "time_seconds": 398.6794822216034}
